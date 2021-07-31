@@ -33,6 +33,9 @@
                          "/css/styles.css")]
      (apply p/include-css css-files))])
 
+;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; this one is for static tabs!!
+;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn- make-tab [opts name text url]
   [:li {:class (if (= name (:tab opts))
                  "active" "")}
@@ -50,14 +53,13 @@
        [:span.icon-bar]
        [:span.icon-bar]
        [:span.icon-bar]]
-      [:a.navbar-brand {:href "/"} "Quil"]]
+      [:a.navbar-brand {:href "/"} "Home"]]
 
      [:div.collapse.navbar-collapse
       [:ul.nav.navbar-nav
        (make-tab opts :about "About" "/")
-       (make-tab opts :examples "Examples" "/examples")
-       (make-tab opts :api "API" "/api")
-       (make-tab opts :create "Create" "/sketches/create")]]]]
+       (make-tab opts :shows "Shows" "/shows")
+       (make-tab opts :shows "Interviews" "/interviews")]]]]
 
    [:div {:class (str (-> opts :type (or "") name)
                       " "

@@ -6,31 +6,24 @@
             [ring.middleware.json :as json]
             [ring.adapter.jetty :refer [run-jetty]]
             [ring.middleware.stacktrace :as stacktrace]
-            [quil-site.controllers.sketches :as sketches]
-            [quil-site.controllers.api :as api]
             [quil-site.views.about :refer [about-page]]
-            [quil-site.views.examples :refer [examples-page]]))
+            [quil-site.views.shows :refer [shows-page]]
+            [quil-site.views.interviews :refer [interviews-page]]))
 
 (defroutes app
   (GET "/" [] (about-page))
-  (GET "/examples" [] (examples-page))
+  (GET "/shows" [] (shows-page))
+  (GET "/interviews" [] (interviews-page))
   (GET "/favicon.ico" [] {:status 204})
-  sketches/routes
-  api/routes
-  (files "/out-main" {:root "out-main"})
-  (files "/out-editor" {:root "out-editor"})
-  (files "/out-preload" {:root "out-preload"})
-  (files "/out-snippets" {:root "out-snippets"})
-  (files "/"))
-
-(defn dump-request [handler]
-  (fn [req]
-    (clojure.pprint/pprint req)
-    (handler req)))
+;  (files "/out-main" {:root "out-main"})
+;  (files "/out-editor" {:root "out-editor"})
+;  (files "/out-preload" {:root "out-preload"})
+;  (files "/out-snippets" {:root "out-snippets"})
+  (files "/")
+  )
 
 (def handler
   (-> #'app
-      ;dump-request
       site
       (json/wrap-json-body {:keywords? true})
       json/wrap-json-response
@@ -39,8 +32,3 @@
 (defn run [port]
   (run-jetty handler {:port (Integer/parseInt port)}))
 
-(comment
-
-  (def server (run-jetty #(handler %) {:port 8080 :join? false}))
-
-  (.stop server))

@@ -9,32 +9,10 @@
          :title "Quil: animation in Clojure"}
         [:div.section
          [:p.lead
-          "Clojure/ClojureScript library for creating interactive drawings and animations. Check out " (link-to "/sketches/create" "online sketch") "."]]
-
-        [:div.row.examples
-         (for [classes ["col-md-4 col-sm-6 col-xs-12"
-                        "col-md-4 col-sm-6 hidden-xs"
-                        "col-md-4 hidden-sm hidden-xs"]]
-           [:div {:class classes}
-            [:div.example
-             [:div.name]
-             [:div.author]
-             [:div.canvas-container]
-             [:div.footer
-              [:span.glyphicon.glyphicon-sort.hidden
-               {:data-toggle "tooltip"
-                :data-placement "bottom"
-                :title (str "Interactive. Select to start interacting using "
-                            "mouse/keyboard.")}]
-              [:a "source"]]]])]
-
-        [:div#add-example
-         [:a {:href "https://github.com/quil/quil/wiki/Adding-new-example-to-quil.info"}
-          [:small
-           "Have a nice sketch?"]]]
+          "Micheal's about page" (link-to "/sketches/create" "online sketch") "."]]
 
         [:div.section
-         [:h3 "Features"]
+         [:h3 "Faytures"]
          [:div.row
           [:div.col-md-6.col-xs-12
            [:dl.features
@@ -55,35 +33,38 @@
              (link-to "https://github.com/quil/quil/wiki/Middleware" "middleware ")
              " or using built-in ones."]]]]]
 
-        [:div.section
-         [:h3 "Getting started"]
-         [:div.row
-          [:div.col-md-6.col-xs-12
-           [:h4 "Clojure"]
-           [:ol
-            [:li "Create project: " [:code "lein new quil my-sketch"]]
-            [:li [:code "cd my-sketch"]]
-            [:li "Open " [:code "src/my_sketch/core.clj"] ", and evaluate it."]]]
-          [:div.col-md-6.col-xs-12
-           [:h4 "ClojureScript"]
-           [:ol
-            [:li "Create project: " [:code "lein new quil-cljs my-sketch"]]
-            [:li [:code "cd my-sketch"]]
-            [:li "Build the project: " [:code "lein cljsbuild once"]]
-            [:li "Open " [:code "index.html"]]]]]
 
-         [:p "If you're new to Clojure check out "
-          (link-to "https://github.com/quil/quil/wiki/Installing" "this tutorial")
-          " or tutorial for "
-          (link-to "https://github.com/quil/quil/wiki/Dynamic-Workflow-%28for-LightTable%29" "Light Table")
-          "."]]
+        (comment
+          [:div.section
+           [:h3 "Getting started"]
+           [:div.row
+            [:div.col-md-6.col-xs-12
+             [:h4 "Clojure"]
+             [:ol
+              [:li "Create project: " [:code "lein new quil my-sketch"]]
+              [:li [:code "cd my-sketch"]]
+              [:li "Open " [:code "src/my_sketch/core.clj"] ", and evaluate it."]]]
+            [:div.col-md-6.col-xs-12
+             [:h4 "ClojureScript"]
+             [:ol
+              [:li "Create project: " [:code "lein new quil-cljs my-sketch"]]
+              [:li [:code "cd my-sketch"]]
+              [:li "Build the project: " [:code "lein cljsbuild once"]]
+              [:li "Open " [:code "index.html"]]]]]
 
-        [:div.section
-         [:h3 "Documentation and articles"]
-         [:ul
-          (for [[name link] [["Quil Intro" "http://nbeloglazov.com/2014/05/29/quil-intro.html"]
-                             ["API docs" "/api"]
-                             ["Project on GitHub" "https://github.com/quil/quil"]
-                             ["Wiki articles" "https://github.com/quil/quil/wiki"]
-                             ["Age of Middleware" "http://nbeloglazov.com/2014/06/22/quil-age-of-middleware.html"]]]
-            [:li (link-to link name)])]]))
+           [:p "If you're new to Clojure check out "
+            (link-to "https://github.com/quil/quil/wiki/Installing" "this tutorial")
+            " or tutorial for "
+            (link-to "https://github.com/quil/quil/wiki/Dynamic-Workflow-%28for-LightTable%29" "Light Table")
+            "."]])
+
+        (comment
+          [:div.section
+           [:h3 "Documentation and articles"]
+           [:ul
+            (for [[name link] [["Quil Intro" "http://nbeloglazov.com/2014/05/29/quil-intro.html"]
+                               ["API docs" "/api"]
+                               ["Project on GitHub" "https://github.com/quil/quil"]
+                               ["Wiki articles" "https://github.com/quil/quil/wiki"]
+                               ["Age of Middleware" "http://nbeloglazov.com/2014/06/22/quil-age-of-middleware.html"]]]
+              [:li (link-to link name)])]])))

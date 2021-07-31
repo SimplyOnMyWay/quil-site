@@ -1,19 +1,19 @@
-(ns quil-site.views.shows
+(ns quil-site.views.interviews
   (:require [quil-site.views.page :refer [page]]
             [hiccup.element :refer [link-to]]))
 
 
-(defn shows-page []
+(defn interviews-page []
   (page {:tab :shows
          :type :shows
          :js-files ["/js/main.js"]
-         :title "Shows!"}
+         :title "Interviews!"}
         [:div.section
          [:p.lead
-          "Shows"]]
+          "Interviews"]]
 
         [:div.section
-         [:h3 "Shows"]
+         [:h3 "Interviews"]
          [:div.row
           [:div.col-md-6.col-xs-12
            [:dl.features
