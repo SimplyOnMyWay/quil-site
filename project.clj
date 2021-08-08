@@ -21,7 +21,7 @@
 
                  [org.clojure/clojurescript "1.10.238"]]
 
-  :source-paths ["src/clj"]
+  :source-paths ["src/clj" "public/img"]
   :test-paths ["test/"
                "src/cljs/editor"]
 

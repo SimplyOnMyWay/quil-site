@@ -10,7 +10,7 @@
    [:meta {:name "viewport"
            :content "width=device-width, initial-scale=1"}]
 
-   [:title (or (:title opts) "Quil")]
+   [:title (or (:title opts) "Micheal O'Cathain")]
 
    [:script {:async "async"
              :src "//www.google-analytics.com/analytics.js"}]
@@ -59,7 +59,8 @@
       [:ul.nav.navbar-nav
        (make-tab opts :about "About" "/")
        (make-tab opts :shows "Shows" "/shows")
-       (make-tab opts :shows "Interviews" "/interviews")]]]]
+       (make-tab opts :interviews "Interviews" "/interviews")
+       (make-tab opts :contact "Contact" "/contact")]]]]
 
    [:div {:class (str (-> opts :type (or "") name)
                       " "

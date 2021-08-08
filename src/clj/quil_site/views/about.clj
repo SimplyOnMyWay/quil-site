@@ -7,64 +7,32 @@
          :type :about
          :js-files ["/js/main.js"]
          :title "Quil: animation in Clojure"}
-        [:div.section
-         [:p.lead
-          "Micheal's about page" (link-to "/sketches/create" "online sketch") "."]]
-
-        [:div.section
-         [:h3 "Faytures"]
-         [:div.row
-          [:div.col-md-6.col-xs-12
-           [:dl.features
-            [:dt "Clojure and ClojureScript"]
-            [:dd "Sketches can be run from clojure or in a browser without modifications."]
-            [:dt "2D and 3D"]
-            [:dd "Quil provides several renderers that allows to draw in 2D, 3D and even in PDF."]
-            [:dt "Based on " (link-to "http://processing.org" "Processing")]
-            [:dd "More than 200 various drawing functions."]]]
-          [:div.col-md-6.col-xs-12
-           [:dl.features
-            [:dt "Live reloading"]
-            [:dd "Modify sketches on fly without closing them."]
-            [:dt "Functional mode"]
-            [:dd "Use pure functions to handle user interaction and state updates (" (link-to "https://github.com/quil/quil/wiki/Functional-mode-%28fun-mode%29" "fun-mode") ")."]
-            [:dt "Middleware"]
-            [:dd "Enhance sketches by creating your own "
-             (link-to "https://github.com/quil/quil/wiki/Middleware" "middleware ")
-             " or using built-in ones."]]]]]
-
-
-        (comment
-          [:div.section
-           [:h3 "Getting started"]
-           [:div.row
-            [:div.col-md-6.col-xs-12
-             [:h4 "Clojure"]
-             [:ol
-              [:li "Create project: " [:code "lein new quil my-sketch"]]
-              [:li [:code "cd my-sketch"]]
-              [:li "Open " [:code "src/my_sketch/core.clj"] ", and evaluate it."]]]
-            [:div.col-md-6.col-xs-12
-             [:h4 "ClojureScript"]
-             [:ol
-              [:li "Create project: " [:code "lein new quil-cljs my-sketch"]]
-              [:li [:code "cd my-sketch"]]
-              [:li "Build the project: " [:code "lein cljsbuild once"]]
-              [:li "Open " [:code "index.html"]]]]]
-
-           [:p "If you're new to Clojure check out "
-            (link-to "https://github.com/quil/quil/wiki/Installing" "this tutorial")
-            " or tutorial for "
-            (link-to "https://github.com/quil/quil/wiki/Dynamic-Workflow-%28for-LightTable%29" "Light Table")
-            "."]])
-
-        (comment
-          [:div.section
-           [:h3 "Documentation and articles"]
-           [:ul
-            (for [[name link] [["Quil Intro" "http://nbeloglazov.com/2014/05/29/quil-intro.html"]
-                               ["API docs" "/api"]
-                               ["Project on GitHub" "https://github.com/quil/quil"]
-                               ["Wiki articles" "https://github.com/quil/quil/wiki"]
-                               ["Age of Middleware" "http://nbeloglazov.com/2014/06/22/quil-age-of-middleware.html"]]]
-              [:li (link-to link name)])]])))
+        [:section {:class "section"}
+         [:div {:class "container"}
+          [:div {:class "box"}
+           [:h1 {:class "title"}
+            "About Mícheál"]
+           [:div {:class "content"}
+            (comment)
+            [:blockquote
+             [:p [:span {:style="font-size: small"} [:i "De bhunadh Chill Dara é Mícheál Ó Catháin agus clú bainte amach aige mar dhuine den ghlúin nua a chasann cláirseach."]]]
+             [:p [:span {:style="font-size: small"} [:i "From Kildare, Mícheál Ó Catháin has achieved recognition as one of the new generation playing cláirseach."]]] 
+             [:p [:span {:style="font-size: medium"} [:b "The Irish Times"]]]]
+            [:p "Mícheál Ó Catháin grew up in a musical family in Kildare, immersed in Irish language, singing and music. Performing for decades as a traditional fiddle player and singer, in recent years he has built on these foundations to develop a comprehensive command of the early Irish harp or " [:em "cláirseach"]]
+            [:p "Faithful to historical practices, Mícheál sings with the harp on his left shoulder and employs specialised fingernail techniques to shape the resonance of these metal-strung instruments. His arrangements of manuscript pieces, guided by the rhythms of his " [:em "sean-nós"] " singing, breathe fresh life into Ireland’s ancient harp music for contemporary audiences."]
+            [:p "Mícheál has performed as a soloist around Ireland in such beautiful venues as the Mussenden Temple in Derry, the Fumbally Stables in Dublin and Naas Arts & Culture Centre in Kildare. He has shared the stage with Cormac Begley, Fiachna Ó Mongáin, Ultan O’Brien, Siobhán Armstrong and Javier Sáinz, as well as with his long-time mentor and collaborator Ann Heymann."]
+            [:p "Currently he is working on a debut solo recording, on harp & 
+voice, of pieces collected from Denis O’Hampsey, the eldest of the 
+harpers to grace the 1792 Belfast Harp Meeting. This recording project 
+features an accurate copy of O’Hampsey’s" [:em " Downhill"] " harp, and shares the fruits of " [:a {:href "#projects"} "Mícheál’s 2017/18 Arts Council Traditional Arts Bursary"]]
+            [:p "As an open process-forum sharing insights from artists he admires and who influence his musical journey, including some of the leading lights of the early Irish harp, Míchéal posts multimedia" [:a {:href "#interviews"} " interviews"] " on his website."]
+                                        ;[:p [:img {:class "aligncenter size-medium"} [:src ""]]]
+            [:p "Mícheál’s profile is steadily increasing, as evidenced by his solo harp/vocal performance in June 2017 at Áras an Uachtarán for President
+ Michael D Higgins and guests, appearance on Irish language channel TG4 
+in November 2017 as part of the inaugural National Harp Day, as 
+well as solo performances in 2018 sharing the stage with luminaries of 
+the early Irish harp Siobhán Armstrong, Ann Heymann, and Javier Sáinz. A valued member of the wider traditional music community, Mícheál 
+performed at the Achill International Harp Festival in 2019."]
+            [:p "In parallel to his musical pursuits, Mícheál has long been passionate about offshore renewable energy, and contributes actively in this area as a chartered" [:a {:href "http://linkedin.com/in/micheal-o-cathain-0956361/"} " marine engineer"]]
+            [:p "Download Mícheál’s" [:a {:href "https://michealocathain.com/Micheal_EPK.pdf"} " EPK / Electronic Press Kit"]]]]]]
+))

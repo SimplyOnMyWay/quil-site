@@ -8,12 +8,15 @@
             [ring.middleware.stacktrace :as stacktrace]
             [quil-site.views.about :refer [about-page]]
             [quil-site.views.shows :refer [shows-page]]
-            [quil-site.views.interviews :refer [interviews-page]]))
+            [quil-site.views.interviews :refer [interviews-page]]
+            [quil-site.views.contact :refer [contact-page]]))
 
 (defroutes app
   (GET "/" [] (about-page))
+  (GET "/about" [] (about-page))
   (GET "/shows" [] (shows-page))
   (GET "/interviews" [] (interviews-page))
+  (GET "/contact" [] (contact-page))
   (GET "/favicon.ico" [] {:status 204})
 ;  (files "/out-main" {:root "out-main"})
 ;  (files "/out-editor" {:root "out-editor"})
