@@ -60,6 +60,7 @@
        (make-tab opts :about "About" "/")
        (make-tab opts :shows "Shows" "/shows")
        (make-tab opts :interviews "Interviews" "/interviews")
+       ;;(make-sub-tab opts :interview-ann-1 "Interview Ann" "/interviews/ann-heymann-1")
        (make-tab opts :contact "Contact" "/contact")]]]]
 
    [:div {:class (str (-> opts :type (or "") name)

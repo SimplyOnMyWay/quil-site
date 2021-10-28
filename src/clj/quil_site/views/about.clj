@@ -6,7 +6,7 @@
   (page {:tab :about
          :type :about
          :js-files ["/js/main.js"]
-         :title "Quil: animation in Clojure"}
+         :title "About"}
         [:section {:class "section"}
          [:div {:class "container"}
           [:div {:class "box"}
