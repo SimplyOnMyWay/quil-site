@@ -20,7 +20,9 @@
        [:div {:class "column"}
         [:h1 [:strong [:em "Early Irish Harp : the State of the Art"] " interview series"]]
         [:h2 "A unique series of interviews with prominent players of the early Irish harp Siobhán Armstrong, Simon Chadwick, Paul Dooley, Ann Heymann and Javier Sáinz."]
-        [:p [:span {:style= "font-size: 1.5rem; line-height: 1.4;"} "In a long-form interview format combining words, photos and film, Mícheál Ó Catháin learns from each artist – stories from their formative musical experiences, insights into manuscript & early printed sources, and how to demystify the most important features of playable replica instruments. A rich diversity of opinions and approaches is celebrated, through the playing of a common piece by each artist – the " [:em "Jointure & Jigg"] " a version of which is found in both the Bunting and Neal collections – alongside other pieces which they have chosen from their journeys through this fascinating ancient tradition."]]
+        [:h3 "In a long-form interview format combining words, photos and film, Mícheál Ó Catháin learns from each artist – stories from their formative musical experiences, insights into manuscript & early printed sources, and how to demystify the most important features of playable replica instruments."]
+        [:h3 "A rich diversity of opinions and approaches is celebrated, through the playing of a common piece by each artist – the " [:em "Jointure & Jigg"] " a version of which is found in both the Bunting and Neal collections – alongside other pieces which they have chosen from their journeys through this fascinating ancient tradition."]
+        [:hr]
         [:p [:em "Early Irish Harp: the State of the Art"] " interview series was funded through the Arts Council Deis Recording and Publication Award 2017"]
         [:p [:img {:class "alignnone " :src "img/AC_FUND_TradArts.png" :width "221" :height "73"}]]
         [:hr]

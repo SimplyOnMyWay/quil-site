@@ -12,10 +12,11 @@
 
    [:title (or (:title opts) "Micheal O'Cathain")]
 
-   [:script {:async "async"
-             :src "//www.google-analytics.com/analytics.js"}]
-   [:script
-    "(function(i,s,r){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (comment
+     [:script {:async "async"
+               :src "//www.google-analytics.com/analytics.js"}]
+     [:script
+      "(function(i,s,r){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
   })(window,document,'ga');
 
@@ -26,7 +27,7 @@
       exDescription: message,
       exFatal: false
     });
-  };"]
+  };"])
 
    (let [css-files (conj (:css-files opts [])
                          "/css/bootstrap.min.css"
@@ -53,15 +54,16 @@
        [:span.icon-bar]
        [:span.icon-bar]
        [:span.icon-bar]]
-      [:a.navbar-brand {:href "/"} "Home"]]
+      [:a.navbar-brand {:href "/"} "Mícheál Ó Catháin"]]
 
      [:div.collapse.navbar-collapse
-      [:ul.nav.navbar-nav
-       (make-tab opts :about "About" "/")
+      [:ul.nav.navbar-nav {:class "nav nav-tabs navbar-right"}
+       (make-tab opts :about "About" "/about")
        (make-tab opts :shows "Shows" "/shows")
        (make-tab opts :interviews "Interviews" "/interviews")
-       ;;(make-sub-tab opts :interview-ann-1 "Interview Ann" "/interviews/ann-heymann-1")
-       (make-tab opts :contact "Contact" "/contact")]]]]
+       (make-tab opts :contact "Projects" "/projects")       
+       ;;(make-tab opts :contact "Contact" "/contact")
+       ]]]]
 
    [:div {:class (str (-> opts :type (or "") name)
                       " "

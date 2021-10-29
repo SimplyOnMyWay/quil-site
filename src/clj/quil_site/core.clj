@@ -16,8 +16,10 @@
             [quil-site.views.paul-dooley :refer [paul-dooley-page]]
             [quil-site.views.javier-sainz :refer [javier-sainz-page]]
             [quil-site.views.simon-chadwick :refer [simon-chadwick-page]]
-            [quil-site.views.siobhan-armstrong :refer [siobhan-armstrong-page]]                                    
-            [quil-site.views.contact :refer [contact-page]]))
+            [quil-site.views.siobhan-armstrong :refer [siobhan-armstrong-page]]
+            [quil-site.views.projects :refer [projects-page]]
+            ;;[quil-site.views.contact :refer [contact-page]]
+            ))
 
 (defroutes app
   (GET "/" [] (home-page))
@@ -29,8 +31,9 @@
   (GET "/interviews/paul-dooley" [] (paul-dooley-page))
   (GET "/interviews/javier-sainz" [] (javier-sainz-page))
   (GET "/interviews/simon-chadwick" [] (simon-chadwick-page))
-  (GET "/interviews/siobhan-armstrong" [] (siobhan-armstrong-page))  
-  (GET "/contact" [] (contact-page))
+  (GET "/interviews/siobhan-armstrong" [] (siobhan-armstrong-page))
+  (GET "/projects" [] (projects-page))
+  ;;  (GET "/contact" [] (contact-page))
   (GET "/favicon.ico" [] {:status 204})
 ;  (files "/out-main" {:root "out-main"})
 ;  (files "/out-editor" {:root "out-editor"})
