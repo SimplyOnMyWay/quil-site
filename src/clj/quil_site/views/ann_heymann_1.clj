@@ -21,9 +21,10 @@
              [:div {:class "column"}
 
               [:h1 {} [:strong {} "Ann Heymann "] ":: part 1"]  
-              [:blockquote {} "\n  " [:h2 {} [:em {} "“I want to see how non-continental the music can be, so I’m sort of looking for it in the pieces. Sometimes I find it”" [:br {}]"\n      – Ann  Heymann"]]]
+              [:blockquote {} "\n  " [:h2 {} [:em {} "“I want to see how non-continental the music can be, so I’m sort of looking for it in the pieces. Sometimes I find it”" [:br {}]"   – Ann Heymann"]]]
               [:img {:class "alignnone ", :src "../img/ann/AnnHeymann_1.jpg", :width "640"}]
               [:h2 {} [:strong {} "Words &amp; images: Mícheál Ó Catháin"]]
+              [:p {} "Recorded in August 2017, published on michealocathain.com in August 2018."]
               [:h3 {} "The Minnesota-based harper Ann Heymann has beautifully reimagined the sound and techniques of the sound and techniques of the early Irish harp over the past four decades, informed by a deep body of work she has developed with her husband and musical partner Charlie Heymann."]
               [:h3 {} "Follow Ann’s work online at:" [:br {}] "\n" [:a {:href "https://annheymann.com/biography.htm"} "annheymann.com"]]
               [:h2 {} [:strong {} "Shownotes"]] "\n" [:p {} "Ann and I cover the following topics in this broad-ranging conversation:"]

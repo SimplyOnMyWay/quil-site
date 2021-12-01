@@ -133,4 +133,6 @@
                         {:output-to "public/js/preload.js"
                          :optimizations :simple
                          :pretty-print false
-                         :static-fns true}}]})
+                         :static-fns true}}]}
+  :main quil-site.core
+  :aot [quil-site.core])

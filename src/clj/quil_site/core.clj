@@ -2,9 +2,9 @@
   (:require [compojure.core :refer [defroutes GET]]
             [compojure.handler :refer [site]]
             [compojure.route :refer [files]]
+            [compojure.middleware :refer [remove-trailing-slash wrap-canonical-redirect]]
             [ring.util.response :as resp]
             [ring.middleware.json :as json]
-            [ring.middleware.reload :refer [wrap-reload]]
             [ring.adapter.jetty :refer [run-jetty]]
             [ring.middleware.stacktrace :as stacktrace]
             [quil-site.views.home :refer [home-page]]
@@ -19,7 +19,8 @@
             [quil-site.views.siobhan-armstrong :refer [siobhan-armstrong-page]]
             [quil-site.views.projects :refer [projects-page]]
             ;;[quil-site.views.contact :refer [contact-page]]
-            ))
+            )
+  (:gen-class))
 
 (defroutes app
   (GET "/" [] (home-page))
@@ -49,11 +50,15 @@
       json/wrap-json-response
       stacktrace/wrap-stacktrace))
 
-(defn run [port]
-  (run-jetty handler {:port (Integer/parseInt port)}))
+(defn remove-trailing-slash-except-root
+  "fix remove-trailing-slash so it doesn't remove slash at root"
+  [^String uri]
+  (if (not= uri "/")
+    (remove-trailing-slash uri)
+    uri))
 
-(run "8000")
+(defn -main []
+  (run-jetty (wrap-canonical-redirect handler remove-trailing-slash-except-root) {:port (Integer/parseInt "5331")}))
 
-(defn reload []
-  (wrap-reload handler))
+;(-main)
 
