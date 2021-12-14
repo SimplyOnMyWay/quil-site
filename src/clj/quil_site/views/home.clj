@@ -17,6 +17,6 @@
            [:div {:class "content"}
             [:div {:class "columns"}
              [:div {:class "column"}
-              [:img {:class "alignnone ", :src "../img/micheal/MichealFumballyAug2018.jpg"}]]]
+              [:img {:class "alignnone ", :src "../img/micheal/MichealFumballyAug2018.jpg",:width "100%"}]]]
             ]]]]
 ))

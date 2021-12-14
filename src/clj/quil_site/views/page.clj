@@ -62,7 +62,7 @@
        (make-tab opts :shows "Shows" "/shows")
        (make-tab opts :interviews "Interviews" "/interviews")
        (make-tab opts :contact "Projects" "/projects")       
-       ;;(make-tab opts :contact "Contact" "/contact")
+       (make-tab opts :contact "Contact" "/contact")
        ]]]]
 
    [:div {:class (str (-> opts :type (or "") name)

@@ -19,7 +19,7 @@
             [quil-site.views.siobhan-armstrong :refer [siobhan-armstrong-page]]
             [quil-site.views.projects :refer [projects-page]]
             [quil-site.views.luthchleasa :refer [luthchleasa-page]]
-            ;;[quil-site.views.contact :refer [contact-page]]
+            [quil-site.views.contact :refer [contact-page]]
             )
   (:gen-class))
 
@@ -36,7 +36,7 @@
   (GET "/interviews/siobhan-armstrong" [] (siobhan-armstrong-page))
   (GET "/projects" [] (projects-page))
   (GET "/luthchleasa" [] (luthchleasa-page))
-  ;;  (GET "/contact" [] (contact-page))
+  (GET "/contact" [] (contact-page))
   (GET "/favicon.ico" [] {:status 204})
 ;  (files "/out-main" {:root "out-main"})
 ;  (files "/out-editor" {:root "out-editor"})

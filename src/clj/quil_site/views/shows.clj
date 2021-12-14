@@ -17,10 +17,14 @@
         [:h1
          [:strong ""]]
         [:p ""]
-                                        ;[:hr]
-        [:h1
-         [:strong "previous shows"]]
 
+        [:h1 [:strong "upcoming shows"]]
+        [:p [:strong "18.12.2021"]
+         [:br] "Lúthchleasa [lu:hxlˈæsə] concert | Solo performance on harp, voice & electronics | Presented by Galway Arts Centre | Venue: Nun's Island Theatre | Sat 18.12.2021, 19:00 | " [:a {:href "https://www.eventbrite.ie/e/luthchleasa-luhxls-solo-concert-by-micheal-o-cathain-tickets-220844360427"} " Tickets"]]
+        [:p [:strong "08.12.2021 – 22.12.2021"]
+         [:br] "Lúthchleasa [lu:hxlˈæsə] exhibition | New generative artwork by Mícheál Ó Catháin, showcasing his process of engaging with the early Irish harp tradition on the harp's own terms | Galway Arts Centre, 47 Dominick Street, Galway City | 08.12.2021 - 22.12.2021 |"  [:a {:href "https://www.galwayartscentre.ie/exhibitions/382-luthchleasa-lu-hxl-aes-by-micheal-o-cathain?lang=en"} " Info"]]
+
+        [:h1 [:strong "previous shows"]]
         [:p [:strong "16.10.2021"]
          [:br] "Solo performance on harp & voice | As part of National Harp Day 2021 and supported by Kildare County Council | Presented by Naas Arts & Culture Centre, McAuley Place, Naas"]
         [:p [:strong "09.10.2021 – 16.10.2021"]
