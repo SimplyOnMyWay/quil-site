@@ -88,6 +88,11 @@
               [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_56.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_56.jpg", :width "20%"}]]
 
               [:br]
+              [:h2 {} [:strong {} "Write ups:"]]
+              [:p [:a {:href "https://www.galwayartscentre.ie/exhibitions/382-luthchleasa-lu-hxl-aes-by-micheal-o-cathain?lang=en"}"Gallery Text"]]
+              [:p [:a {:href "https://www.galwaydaily.com/arts-entertainment/galway-arts-centre-announces-december-programme/"}"Galway Daily, 04.12.2021"]]
+              [:p [:a {:href "https://www.advertiser.ie/galway/article/126241/three-exhibitions-open-today-at-galway-arts-centre"}"Galway Advertiser, 08.12.2021"]]
+              [:p [:a {:href "https://connachttribune.ie/east-and-west-meet-in-arts-centre-exhibitions/"} "Connacht Tribune, 10.12.2021"]]
               [:br]
 
     
