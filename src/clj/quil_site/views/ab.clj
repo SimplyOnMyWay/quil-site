@@ -1,11 +1,14 @@
 (ns quil-site.views.ab
   (:require [quil-site.views.page :refer [page]]
-            [hiccup.element :refer [link-to]]))
+            [hiccup.element :refer [link-to]]
+            [hiccup.page :refer [include-js]]))
+
+;(include-js "https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js")
 
 (defn ab-page []
   (page {:tab :ab
          :type :ab-page
-         :js-files ["/js/main.js"]
+         :js-files ["https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js" "js/ab_hash.js" "js/moc-ab-script-compiled-a.js"]
          :title "Art Blocks working prototype"}
 
         [:div.section
@@ -19,14 +22,14 @@
             [:div {:class "columns"}
 
              [:div {:class "column"}
-              [:h3 {} [:strong {} "[Placeholder]"]]
-              [:p {} "This is a placeholder URL for my March 2022 application to Art Blocks.  Working protype will be hosted here in the coming days, consisting:"]
-        [:ul {}
-         [:li {} "" [:a {:href ""} "rendered artwork"]]
-         [:li {} "" [:a {:href ""} "p5.js script, unminified"]]
-         [:li {} [:a {:href ""} "p5.js script, minified"]]
-]
-              [:p {} [:strong {} " - Mícheál Ó Catháin 07.03.2022"]]
+              [:p {} "Hello! Here is my working prototype as part of my debut application to Art Blocks, submitted March 2022."]
+              [:p {} "This evolving work in progress consists:"]
+              [:ul {}
+               [:li {} "" [:a {:href ""} "rendered artwork"]]
+               [:li {} "" [:a {:href "js/moc-ab-script.js"} "p5.js script, unminified"]]
+               [:li {} [:a {:href "js/moc-ab-script-compiled-a.js"} "p5.js script, minified"]]
+               ]
+              [:p {} [:strong {} " - Mícheál Ó Catháin 09.03.2022"]]
               ]]]]]]
 
 
