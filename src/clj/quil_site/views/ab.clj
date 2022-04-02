@@ -26,10 +26,17 @@
               [:p {} "This evolving work in progress consists:"]
               [:ul {}
                [:li {} "" [:a {:href ""} "rendered artwork"]]
-               [:li {} "" [:a {:href "js/moc-ab-script.js"} "p5.js script, unminified"]]
-               [:li {} [:a {:href "js/moc-ab-script-compiled-a.js"} "p5.js script, minified"]]
+               [:li {} "" [:a {:href "cljs/dynamic.cljs"} "clojurescript code. "] "I normally make generative art in clojurescript.  I love this language and how well suited it is for generative art."]
+               [:li {} "" [:a {:href "js/moc-ab-script.js"} "p5.js script, unminified. "] "For Art Blocks I port from clojurescript to google closure compatible javascript."]
+               [:li {} [:a {:href "js/moc-ab-script-compiled-a.js"} "p5.js script, minified. "] "I minify my javascript code using the google closure compiler."]
                ]
-              [:p {} [:strong {} " - Mícheál Ó Catháin 09.03.2022"]]
+
+              [:br]
+              [:p "Coming soon..."]
+              [:ul {}
+               [:li {} "generative audio based on a modal additive synthesis of my early Gaelic harp"]
+               [:li {} "artist statement for the piece"]]
+              [:p {} [:strong {} " - Mícheál Ó Catháin 24.03.2022"]]
               ]]]]]]
 
 
