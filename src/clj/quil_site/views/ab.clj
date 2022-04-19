@@ -25,23 +25,18 @@
               [:p {} "Hello! Here is my working prototype as part of my debut application to Art Blocks, submitted March 2022."]
               [:p {} "This evolving work in progress consists:"]
               [:ul {}
-               [:li {} "" [:a {:href ""} "rendered artwork"]]
+               [:li {} "" [:a {:href ""} "rendered artwork."] " Scroll down and reload page to generate a fresh iteration!"]
                [:li {} "" [:a {:href "cljs/dynamic.cljs"} "clojurescript code. "] "I normally make generative art in clojurescript.  I love this language and how well suited it is for generative art."]
                [:li {} "" [:a {:href "js/moc-ab-script.js"} "p5.js script, unminified. "] "For Art Blocks I port from clojurescript to google closure compatible javascript."]
                [:li {} [:a {:href "js/moc-ab-script-compiled-a.js"} "p5.js script, minified. "] "I minify my javascript code using the google closure compiler."]
                ]
 
               [:br]
-              [:p "Coming soon..."]
-              [:ul {}
-               [:li {} "generative audio based on a modal additive synthesis of my early Gaelic harp"]
-               [:li {} "artist statement for the piece"]]
-              [:p {} [:strong {} " - Mícheál Ó Catháin 24.03.2022"]]
+              [:p  [:a {:href "/ab/artist-statement"} "Artist statement"] " here"]
+              [:p {} "Please be aware that generative audio is currently in progress and not yet included in this prototype.  A generative system of audio based on synthesis of my early Gaelic harp, as well as sythesised vocal suitable for minified on-chain code is currently my main focus. This prototype will be updated soon to include this generative audio."]
+            
+              [:p {} [:strong {} " - Mícheál Ó Catháin"]]
               ]]]]]]
-
-
-
-
 
         [:div.row.examples
          [:div#template {:class "col-md-4 col-sm-6 col-xs-12 hidden"}
@@ -58,6 +53,7 @@
               :title (str "Interactive. Select to start interacting using "
                           "mouse/keyboard.")}]
             [:a "source"]
+            [:p "yo!"]
             [:span.glyphicon.glyphicon-pause.hidden.pause]]]]]))
 
 

@@ -21,6 +21,7 @@
             [quil-site.views.luthchleasa :refer [luthchleasa-page]]
             [quil-site.views.luthchleasa-documentation :refer [luthchleasa-documentation-page]]
             [quil-site.views.ab :refer [ab-page]]
+            [quil-site.views.ab-as :refer [ab-as-page]]            
             [quil-site.views.contact :refer [contact-page]]
             )
   (:gen-class))
@@ -39,8 +40,10 @@
   (GET "/projects" [] (projects-page))
   (GET "/luthchleasa" [] (luthchleasa-page))
   (GET "/luthchleasa-documentation" [] (luthchleasa-documentation-page))
-  (GET "/ab" [] (ab-page))  
+  (GET "/ab" [] (ab-page))
+  (GET "/ab/artist-statement" [] (ab-as-page))  
   (GET "/contact" [] (contact-page))
+  (GET "/contact-post" [] (contact-page))
   (GET "/favicon.ico" [] {:status 204})
 ;  (files "/out-main" {:root "out-main"})
 ;  (files "/out-editor" {:root "out-editor"})

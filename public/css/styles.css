@@ -274,8 +274,18 @@ body .container.api a {
     cursor: pointer;
 }
 
-#share-dialog input {
+/* #share-dialog input {
     cursor: pointer;
     height: 35px;
     padding: 5px;
+} */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hormargins {
+    margin: 0% 1.5% 0% 1.5%;
 }
