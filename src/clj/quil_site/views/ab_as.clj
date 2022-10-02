@@ -8,12 +8,12 @@
 (defn ab-as-page []
   (page {:tab :ab-as
          :type :ab-as-page
-         :js-files ["https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js" "js/ab_hash.js" "js/moc-ab-script-compiled-a.js"]
-         :title "Art Blocks artist statement"}
+         :js-files ["https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js" "../js/ab_hash.js" "../js/moc-ab-script-compiled-a.js"]
+         :title "Art Blocks proposal"}
 
         [:div.section
          [:p.lead
-          "Art Blocks artist statement: " [:em "Juxt"]]]
+          "Art Blocks project: " [:em "Juxt"] " by Mícheál Ó Catháin"]]
 
         [:section {:class "section"}
          [:div {:class "container"}
@@ -21,7 +21,11 @@
            [:div {:class "content"}
             [:div {:class "columns"}
 
-             [:div {:class "column"}
+             [:a {:href "#as"} "Artist Statement"]
+             [:br]
+             [:a {:href "#wp"} "Working Prototype"]
+             
+             [:div {:class "column" :id "as"}
               
               (comment
                 [:blockquote
@@ -29,6 +33,9 @@
                  [:p "Takes a set of functions and returns a fn that is the juxtaposition of those fns.  The returned fn takes a variable number of args, and returns a vector containing the result of applying each fn to the args (left-to-right)."]
                  [:p "((juxt a b c) x) => [(a x) (b x) (c x)]"]
                  [:p "- clojure.core library"]])
+
+              [:h3 "Artist Statement"]
+
               [:blockquote
                [:p "Every cultural period creates art of its own, which can never be repeated again. An effort to revive art-principles of the past, at best, can lead only to the production of stillborn works."]
                [:p "- Wassily Kandinsky" [:em ", On the Spiritual in Art"] " 1910"]]
@@ -45,7 +52,31 @@
               [:p {}
                [:br]
                "Curiously contemplating a hypothesis that the answer may be \"both/and\", i.e., digital and carbon-based media juxtaposed symbiotically, the starting point of this project is to ask how the medium of on-chain generative art can help us walk this mountainous soundscape?  What stories can we tell ourelves, our minds nourished and held by this combined musical and visual terrain? Where are the inner gardens lost in time or in obscure archives, which may be remapped with virtual compass, feet and pen extended to us by the generative medium? Where are the borders with something entirely other, the contours beyond which one idiom transitions towards other traditions, real or newly imagined?  And then grounded in this idiomatic terrain using these newly embraced digital senses, and mindful of O'Hampsey's and Kandinsky's resonating admonitions, what new nourishing musical and visual forms may be manifested?"]
-              [:p {} [:em "Juxt"] " lives these questions and shares what emerges."]]]]]]]
+              [:p {} [:em "Juxt"] " lives these questions and shares what emerges."]]
+
+
+             [:div {:class "column" :id "wp"}
+              [:hr]
+              [:h3 "Working Prototype"]
+              [:p {} "This evolving work in progress consists:"]
+              [:ul {}
+               [:li {} "" [:a {:href "#gen-art"} "rendered artwork."] " Click or scroll down, and reload page to generate a fresh iteration!"]
+               [:li {} "" [:a {:href "cljs/dynamic.cljs"} "clojurescript code. "] "I normally make generative art in clojurescript.  I love this language and how well suited it is for generative art."]
+               [:li {} "" [:a {:href "js/moc-ab-script.js"} "p5.js script, unminified. "] "For Art Blocks I port from clojurescript to google closure compatible javascript."]
+               [:li {} [:a {:href "js/moc-ab-script-compiled-a.js"} "p5.js script, minified. "] "I minify my javascript code using the google closure compiler."]
+               ]
+
+              [:br]
+
+              [:p {} "Please be aware that generative audio is currently in progress and not yet included in this prototype.  A generative system of audio, based on synthesis of my early Gaelic harp as well as sythesised vocals suitable for minified on-chain code, is currently my main focus. This prototype will be updated soon to include this generative audio."]
+              
+              [:p {} [:strong {} " - Mícheál Ó Catháin"]]
+
+              [:button {:id "toggle"}]]
+
+             [:div {:class "column" :id "gen-art"}]
+
+              ]]]]]
 
 ))
 

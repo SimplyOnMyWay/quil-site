@@ -1,5 +1,126 @@
 goog.provide('sketch');
 
+
+let sharedObject = {data:
+                    {
+                      msg: null,
+                      U: null
+                    }
+                   };
+
+
+// #################
+// audio
+
+let audioContext = null;
+// mode palette
+let sa = 351.2*7/8;
+let f0s_ = [sa, sa*6/5, sa*3/2, sa*8/5, sa*9/5, sa*2, sa*12/5];
+
+/**
+ * @return AudioWorkletNode;
+ */
+sketch.createMyInstrumentProcessor = async function() {
+  if (!audioContext) {
+    try {
+      audioContext = new AudioContext();
+    } catch(e) {
+      //console.log("** Error: Unable to create audio context");
+      return null;
+    }
+  }
+  var myInstrumentNode;
+  try {
+    myInstrumentNode = new AudioWorkletNode(
+      audioContext,
+      "instrument-processor",
+      {
+        processorOptions: {
+          "f0s_": f0s_
+        }
+      }
+    );
+  } catch(e) {
+    try {
+      //console.log("adding instrument-processor...")
+      await audioContext.audioWorklet.addModule("instrument-processor-hybrid-compiled.js");
+      myInstrumentNode = new AudioWorkletNode(
+        audioContext,
+        "instrument-processor",
+        {
+          processorOptions: {
+            "f0s_": f0s_
+          }
+        });
+    } catch(e) {
+      //console.log(`** Error: Unable to create myInstrumentNode worklet node: ${e}`);
+      return null;
+    }
+  }
+  await audioContext.resume();
+  return myInstrumentNode;
+}
+
+sketch.audioDemoStart = async function() {
+  var harpNode = await sketch.createMyInstrumentProcessor();
+  if (!harpNode) {
+    //console.log("** Error: unable to create delay processor");
+    return;
+  }  
+
+  // Connect and start
+  
+  harpNode.connect(audioContext.destination);
+
+  harpNode.port.onmessage = (event) => {
+    // Handling data from the processor.
+
+    sharedObject = event;
+//    console.log(sharedObject.data);
+  };
+
+  let pluck = function(stringno){
+    harpNode.port.postMessage({
+      "type": "play",
+      "stringno": stringno
+    });
+  }
+
+  // simple loop
+  let baseDelay = 500; // in milliseconds
+  let loopDelays = new Array(f0s_.length);
+  let initialDelays = [4000, 8100, 5600, 12600, 9200, 14100,3100];
+  loopDelays = [19700, 17800, 21300, 22100, 18400, 20000, 17700].map( (val) => val * 1);
+  for (let stringno = 0; stringno < f0s_.length; stringno++){
+    setTimeout(() => pluck(stringno), initialDelays[stringno]);
+  }
+  for (let stringno = 0; stringno < f0s_.length; stringno++){
+    setInterval(() => {
+      setTimeout(() => pluck(stringno), (10000 - 8500*Math.random()));
+    }, loopDelays[stringno]);
+  }
+}
+
+window.addEventListener("load", event => {
+  document.getElementById("toggle").addEventListener("click", toggleSound);
+});
+
+/**
+  */
+var toggleSound = async function(event) {
+  console.log("button clicked!");
+  if (!audioContext) {
+    sketch.audioDemoStart();
+  } else {
+    await audioContext.close();
+    audioContext = null;
+  }
+}
+
+
+// #################
+// visuals
+
 // random class based on sfc32 from AB 101
 /**
  * Creates a new sfc32 function seeded by hash string
@@ -241,112 +362,115 @@ var drawSpiral = function(spiralxyVec, vertexSd, scale, xmean, ymean, xsd, ysd) 
 }
 
 
+var bgCol = [48, 42, 27, 1.0];
+
+var alpha = 1.0; //0.68;
+var sColVec = [[208, 65, 74, alpha],
+               [107, 60, 45, alpha],
+               [79, 83, 74, alpha],
+               [0, 76, 94, alpha]];
+
+var numVertices = 40;
+var startAngle0 = 0;
+var startAngleN = -5*PI;
+var startAngleStep = -0.5*PI;
+var startAngleIndMax = (startAngleN - startAngle0)/startAngleStep;
+var endAngle0 = 1*PI;
+var endAngleN = 3*PI;
+var endAngleStep = 0.125*PI;
+var endAngleIndMax = (endAngleN - endAngle0)/endAngleStep;
+var noIter = 7;//R.random_int(3,7);
+console.log("noIter = ", noIter);
+var startAngleVec = [0, 0, 0];
+for (let i = 3; i < startAngleIndMax + 3; i++){
+  startAngleVec[i] = startAngle0 + (i - 3)*startAngleStep;
+}
+var endAngleVec = [];
+for (let i = 0; i < endAngleIndMax; i++){
+  endAngleVec[i] = endAngle0 + i*endAngleStep;
+}
+var startAngle = new Array(noIter).fill(0);
+var endAngle = new Array(noIter).fill(0);
+var xmeanVec = new Array(18).fill(0); var xmean = new Array(noIter).fill(0);
+var ymeanVec = new Array(18).fill(0); var ymean = new Array(noIter).fill(0);
+var vertexSdVec = [0, R.random_pareto_bounded(0.01, 0.1, 0.1)]; var vertexSd = new Array(noIter).fill(0);
+var scaleVec = [10, R.random_pareto_bounded(5, 20, 1.16)]; var scale = [];//new Array(noIter).fill(0);
+var spiralStepVec = [0.005, R.random_pareto_bounded(0.005, 0.1, 1.16)]; var spiralStep = new Array(noIter).fill(0);
+var sWeight = new Array(noIter).fill(0);
+var colInd = [];
+//let xsdVec = [0, R.random_pareto_bounded(0.01, 2, 0.1)];
+var xsd = 0; //xsdVec[R.random_int(0, (xsdVec.length - 1))];
+//let ysdVec = [0, xsd/10, xsd];
+var ysd = 0; //ysdVec[R.random_int(0, (ysdVec.length - 1))];
+
+var spiralxyVec = [];
+var baseVec = [];
+var baseStart = 1.0;
+var baseEnd  = PHI;
+var baseN = [];
+
+for (let i = 0; i < 6; i++){xmeanVec[i] = 0.5};
+for (let i = 6; i < 12; i++){xmeanVec[i] = (1 / (1 + PHI))/(1 + PHI)}; //PHI -1};
+for (let i = 12; i < 18; i++){xmeanVec[i] = 1 - (1 / (1 + PHI))/(1 + PHI)}; //2 - PHI};
+
+for (let i = 0; i < 8; i++){ymeanVec[i] = (1 / (1 + PHI))/(1 + PHI)};
+for (let i = 8; i < 15; i++){ymeanVec[i] = 1 - (1 / (1 + PHI))/(1 + PHI)};    
+for (let i = 15; i < 16; i++){ymeanVec[i] = PHI -1};
+for (let i = 16; i < 18; i++){ymeanVec[i] = 2 - PHI};
+
+for (let iterNo = 0; iterNo < noIter; iterNo++){
+  startAngle[iterNo] = startAngleVec[R.random_int(0, (startAngleVec.length - 1))];
+  endAngle[iterNo] = endAngleVec[R.random_int(0, (endAngleVec.length - 1))];
+  xmean[iterNo] = xmeanVec[R.random_int(0, (xmeanVec.length - 1))];
+  ymean[iterNo] = ymeanVec[R.random_int(0, (ymeanVec.length - 1))];
+  vertexSd[iterNo] = vertexSdVec[R.random_int(0, (vertexSdVec.length - 1))];
+  scale[iterNo] = scaleVec[R.random_int(0, (scaleVec.length - 1))];
+  spiralStep[iterNo] = spiralStepVec[R.random_int(0, (spiralStepVec.length - 1))];
+  
+  if (spiralStep[iterNo] <= 0.01 && vertexSd[iterNo] <= 0.01){
+    sWeight[iterNo] = 0.0005}
+  else if ((spiralStep[iterNo] > 0.01 && spiralStep[iterNo] < 0.05) && vertexSd[iterNo] <= 0.01){
+    sWeight[iterNo] = 0.001}
+  else {sWeight[iterNo] = 0.00005};
+  colInd[iterNo] = R.random_int(0, sColVec.length -1);
+
+  baseN[iterNo] = (baseEnd - baseStart)/spiralStep[iterNo];
+  let spiralxyVec_ = [];
+  for (let baseNo = 0; baseNo < baseN[iterNo]; baseNo++){
+    baseVec[baseNo] = baseStart + baseNo * spiralStep[iterNo];
+    spiralxyVec_[baseNo] = genSpiralxyVec(baseVec[baseNo], startAngle[iterNo], endAngle[iterNo], numVertices);
+  }
+  spiralxyVec[iterNo] = spiralxyVec_;
+}
+
+
 setup = function() {
   createCanvas(DIM, DIM);
   colorMode(HSB, 360, 100, 100, 1);
 }
 
 draw = function() {
-  noLoop();
-  noFill();
-  //noStroke();
-  //fill(0, 50, 20, 0.01);
-  //var bgCol = [253,45,85,1.0];
-  var bgCol = [48, 42, 27, 1.0];
+
+  let x = [];
+  if (sharedObject.data["msg"] = "analysis")
+    {
+      x = sharedObject.data["amplitude"];
+      //console.log("stringno = ", sharedObject.data["stringno"]);
+      console.log(sharedObject.data);
+    };
+
   background(bgCol[0],bgCol[1],bgCol[2],bgCol[3]);
-//  var sCol = [208, 25, 95, 1.0];
-  var alpha = 0.68
-  var sColVec = [[208, 65, 74, alpha],
-                 [107, 60, 45, alpha],
-                 [79, 83, 74, alpha],
-                 [0, 76, 94, alpha]];
-  var numVertices = 1500;
-  var startAngle0 = 0;
-  var startAngleN = -10*PI;
-  var startAngleStep = -0.5*PI;
-  var startAngleIndMax = (startAngleN - startAngle0)/startAngleStep;
-  var endAngle0 = 1*PI;
-  var endAngleN = 3*PI;
-  var endAngleStep = 0.125*PI;
-  var endAngleIndMax = (endAngleN - endAngle0)/endAngleStep;
-  var noIter = 2;
-  var sWeight;
-  var startAngleVec = [0, 0, 0];
-  for (let i = 3; i < startAngleIndMax + 3; i++){
-    startAngleVec[i] = startAngle0 + (i - 3)*startAngleStep;
-  }
-  var endAngleVec = [];
-  for (let i = 0; i < endAngleIndMax; i++){
-    endAngleVec[i] = endAngle0 + i*endAngleStep;
-  }
-  console.log("endAngleVec = ",endAngleVec);
-
-  //var scale = 20;
-  //var vertexSd = 0.01;
-  //var spiralStep = 0.05;
-  //strokeWeight(w(0.001));
-  //var xmean = 0.5;
-
+  noFill();
   for (let i = 0; i < noIter; i++)
   {
-    let xmeanVec = [];
-    for (let i = 0; i < 15; i++){xmeanVec[i] = 0.5};
-    for (let i = 15; i < 16; i++){xmeanVec[i] = PHI -1};
-    for (let i = 16; i < 18; i++){xmeanVec[i] = 2 - PHI};
-    let xmean = xmeanVec[R.random_int(0, (xmeanVec.length - 1))];
-    console.log("xmeanVec = ",xmeanVec);
-    let ymeanVec = [];
-    for (let i = 0; i < 8; i++){ymeanVec[i] = 0.5};
-    for (let i = 8; i < 15; i++){ymeanVec[i] = xmean};    
-    for (let i = 15; i < 16; i++){ymeanVec[i] = PHI -1};
-    for (let i = 16; i < 18; i++){ymeanVec[i] = 2 - PHI};
-    let ymean = ymeanVec[R.random_int(0, (ymeanVec.length - 1))];
-    //let xsdVec = [0, R.random_pareto_bounded(0.01, 2, 0.1)];
-    let xsd = 0; //xsdVec[R.random_int(0, (xsdVec.length - 1))];
-    //let ysdVec = [0, xsd/10, xsd];
-    let ysd = 0; //ysdVec[R.random_int(0, (ysdVec.length - 1))];
-
-    let startAngle = startAngleVec[R.random_int(0, (startAngleVec.length - 1))];
-    let endAngle = endAngleVec[R.random_int(0, (endAngleVec.length - 1))];
-
-    let vertexSdVec = [0, R.random_pareto_bounded(0.01, 0.1, 0.1)];
-    let vertexSd = vertexSdVec[R.random_int(0, (vertexSdVec.length - 1))];
-    let scaleVec = [10, R.random_pareto_bounded(5, 20, 1.16)];
-    let scale = scaleVec[R.random_int(0, (scaleVec.length - 1))];
-    let spiralStepVec = [0.005, R.random_pareto_bounded(0.005, 0.1, 1.16)];
-    let spiralStep = spiralStepVec[R.random_int(0, (spiralStepVec.length - 1))];
-    if (spiralStep <= 0.01 && vertexSd <= 0.01){
-      sWeight = 0.0005}
-    else if ((spiralStep > 0.01 && spiralStep < 0.05) && vertexSd <= 0.01){
-    sWeight = 0.001}
-    else {sWeight = 0.00005};
-
-    let colInd = R.random_int(0, sColVec.length -1);
-    stroke(sColVec[colInd][0], sColVec[colInd][1], sColVec[colInd][2], sColVec[colInd][3]);
-//    stroke(sCol[0], sCol[1], sCol[2], sCol[3]);
-    strokeWeight(w(sWeight));
-
-    /*
-    console.log(
-      "Params... ",                              
-      "\nstart-angle = ", startAngle,
-      "\nend-angle = ", endAngle, 
-      "\nx-mean = ", xmean,               
-      "\ny-mean = ", ymean,                     
-      "\nx-sd = ", xsd,                         
-      "\ny-sd = ", ysd,                         
-      "\nvertex-sd = ", vertexSd,               
-      "\nnumber-vertices = ", numVertices,   
-      "\nscale = ", scale,                       
-      "\nno-iter = ", noIter,                   
-      "\ns-weight = ", sWeight);
-    */
-    
-    for (let base = 1.0; base <= PHI; base = base + spiralStep) {
-      let spiralxyVec = genSpiralxyVec(base, startAngle, endAngle, numVertices);
-      drawSpiral(spiralxyVec, vertexSd, scale, xmean, ymean, xsd, ysd);
+    stroke(sColVec[colInd[i]][0], sColVec[colInd[i]][1], sColVec[colInd[i]][2], sColVec[colInd[i]][3]);
+    strokeWeight(w(sWeight[i]));
+  for (let baseNo = 0; baseNo < baseN[i]; baseNo++){
+      drawSpiral(spiralxyVec[i][baseNo], vertexSd[i], scale[i]*100*x, xmean[i], ymean[i], xsd[i], ysd[i]);
     }
   }    
 }
+
+
 
 
