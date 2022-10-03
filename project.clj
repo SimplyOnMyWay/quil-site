@@ -3,23 +3,23 @@
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.9.0"]
+  :dependencies [[org.clojure/clojure "1.11.1"]
                  [compojure "1.6.0"]
                  [hiccup "1.0.5"]
-                 [ring "1.6.3"]
-                 [ring/ring-json "0.4.0"]
+                 [ring "1.9.6"]
+                 [ring/ring-json "0.5.1"]
                  [quil "3.1.0"]
                  [me.raynes/fs "1.4.6"]
-                 [org.clojure/tools.reader "1.2.2"]
-                 [org.clojure/core.cache "0.7.1"]
+                 [org.clojure/tools.reader "1.3.6"]
+                 [org.clojure/core.cache "1.0.225"]
                  [org.clojure/data.codec "0.1.1"]
-                 [clj-http "3.8.0"]
+                 [clj-http "3.12.3"]
                  [cheshire "5.8.0"]
                  [pandect "0.6.1"]
                  [jayq "2.5.5"]
                  [zprint "0.4.10"]
 
-                 [org.clojure/clojurescript "1.10.238"]]
+                 [org.clojure/clojurescript "1.11.60"]]
 
   :source-paths ["src/clj" "public/img"]
   :test-paths ["test/"
@@ -37,8 +37,8 @@
                   "out-editor"
                   "out-preload"]
 
-  :plugins [[lein-cljsbuild "1.1.7"]
-            [lein-cljfmt "0.5.7"]]
+  :plugins [[lein-cljsbuild "1.1.8"]
+            [lein-cljfmt "0.9.0"]]
 
   :profiles {:dev
 

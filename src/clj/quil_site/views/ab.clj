@@ -1,19 +1,10 @@
 (ns quil-site.views.ab
-  (:require [quil-site.views.page :refer [page]]
-            [hiccup.element :refer [link-to]]
-            [hiccup.page :refer [include-js]]))
-
-;(include-js "https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js")
-
-(defn load-processor
-  []
-  (include-js ))
-
+  (:require [quil-site.views.page :refer [page]]))
 
 (defn ab-page []
   (page {:tab :ab
          :type :ab-page
-         :js-files ["https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js" "js/ab_hash.js" "js/instrument-processor-hybrid-compiled.js" "js/moc-ab-script-compiled-a.js"]
+         :js-files ["https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js" "js/ab_hash.js" "js/moc-ab-script-compiled-a.js"]
          :title "Art Blocks proposal"}
 
         [:div.section
@@ -75,7 +66,7 @@
 
               [:p {} "Please be aware that generative audio is currently in progress and not yet included in this prototype.  A generative system of audio, based on synthesis of my early Gaelic harp as well as sythesised vocals suitable for minified on-chain code, is currently my main focus. This prototype will be updated soon to include this generative audio."]
               
-              [:p {} [:strong {} " - Mícheál Ó Catháin"]]
+              [:p {} [:strong {} " - Mícheál Ó Catháin ..."]]
               ]
 
              
@@ -88,5 +79,10 @@
 
         
         ))
+
+
+
+
+
 
 

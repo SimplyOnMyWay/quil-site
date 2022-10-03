@@ -4,122 +4,13 @@ goog.provide('sketch');
 let sharedObject = {data:
                     {
                       msg: null,
-                      U: null
+                      amplitude: [0]
                     }
                    };
 
 
-// #################
-// audio
-
-let audioContext = null;
-// mode palette
-let sa = 351.2*7/8;
-let f0s_ = [sa, sa*6/5, sa*3/2, sa*8/5, sa*9/5, sa*2, sa*12/5];
-
-/**
- * @return AudioWorkletNode;
- */
-sketch.createMyInstrumentProcessor = async function() {
-  if (!audioContext) {
-    try {
-      audioContext = new AudioContext();
-    } catch(e) {
-      //console.log("** Error: Unable to create audio context");
-      return null;
-    }
-  }
-  var myInstrumentNode;
-  try {
-    myInstrumentNode = new AudioWorkletNode(
-      audioContext,
-      "instrument-processor",
-      {
-        processorOptions: {
-          "f0s_": f0s_
-        }
-      }
-    );
-  } catch(e) {
-    try {
-      //console.log("adding instrument-processor...")
-      await audioContext.audioWorklet.addModule("instrument-processor-hybrid-compiled.js");
-      myInstrumentNode = new AudioWorkletNode(
-        audioContext,
-        "instrument-processor",
-        {
-          processorOptions: {
-            "f0s_": f0s_
-          }
-        });
-    } catch(e) {
-      //console.log(`** Error: Unable to create myInstrumentNode worklet node: ${e}`);
-      return null;
-    }
-  }
-  await audioContext.resume();
-  return myInstrumentNode;
-}
-
-sketch.audioDemoStart = async function() {
-  var harpNode = await sketch.createMyInstrumentProcessor();
-  if (!harpNode) {
-    //console.log("** Error: unable to create delay processor");
-    return;
-  }  
-
-  // Connect and start
-  
-  harpNode.connect(audioContext.destination);
-
-  harpNode.port.onmessage = (event) => {
-    // Handling data from the processor.
-
-    sharedObject = event;
-//    console.log(sharedObject.data);
-  };
-
-  let pluck = function(stringno){
-    harpNode.port.postMessage({
-      "type": "play",
-      "stringno": stringno
-    });
-  }
-
-  // simple loop
-  let baseDelay = 500; // in milliseconds
-  let loopDelays = new Array(f0s_.length);
-  let initialDelays = [4000, 8100, 5600, 12600, 9200, 14100,3100];
-  loopDelays = [19700, 17800, 21300, 22100, 18400, 20000, 17700].map( (val) => val * 1);
-  for (let stringno = 0; stringno < f0s_.length; stringno++){
-    setTimeout(() => pluck(stringno), initialDelays[stringno]);
-  }
-  for (let stringno = 0; stringno < f0s_.length; stringno++){
-    setInterval(() => {
-      setTimeout(() => pluck(stringno), (10000 - 8500*Math.random()));
-    }, loopDelays[stringno]);
-  }
-}
-
-window.addEventListener("load", event => {
-  document.getElementById("toggle").addEventListener("click", toggleSound);
-});
-
-/**
-  */
-var toggleSound = async function(event) {
-  console.log("button clicked!");
-  if (!audioContext) {
-    sketch.audioDemoStart();
-  } else {
-    await audioContext.close();
-    audioContext = null;
-  }
-}
-
-
-// #################
-// visuals
+// ##################
+// PRNG class and methods...
 
 // random class based on sfc32 from AB 101
 /**
@@ -259,6 +150,123 @@ sketch.random.prototype.random_pareto_bounded = function(L, H, shape) {
 // where the random rubber hits the road!!!
 var R = new sketch.random();
 
+
+
+
+// #################
+// audio
+
+let audioContext = null;
+// mode palette
+let sa = 351.2*7/8;
+let f0s_ = [sa, sa*6/5, sa*3/2, sa*8/5, sa*9/5, sa*2, sa*12/5];
+
+/**
+ * @return AudioWorkletNode;
+ */
+sketch.createMyInstrumentProcessor = async function() {
+  if (!audioContext) {
+    try {
+      audioContext = new AudioContext();
+    } catch(e) {
+      //console.log("** Error: Unable to create audio context");
+      return null;
+    }
+  }
+  var myInstrumentNode;
+  try {
+    myInstrumentNode = new AudioWorkletNode(
+      audioContext,
+      "instrument-processor",
+      {
+        processorOptions: {
+          "f0s_": f0s_
+        }
+      }
+    );
+  } catch(e) {
+    try {
+      //console.log("adding instrument-processor...")
+      await audioContext.audioWorklet.addModule("js/instrument-processor-hybrid-compiled.js");
+      myInstrumentNode = new AudioWorkletNode(
+        audioContext,
+        "instrument-processor",
+        {
+          processorOptions: {
+            "f0s_": f0s_,
+            "RNG": R
+          }
+        });
+    } catch(e) {
+      //console.log(`** Error: Unable to create myInstrumentNode worklet node: ${e}`);
+      return null;
+    }
+  }
+  await audioContext.resume();
+  return myInstrumentNode;
+}
+
+sketch.audioDemoStart = async function() {
+  var harpNode = await sketch.createMyInstrumentProcessor();
+  if (!harpNode) {
+    //console.log("** Error: unable to create delay processor");
+    return;
+  }  
+
+  // Connect and start
+  
+  harpNode.connect(audioContext.destination);
+
+  harpNode.port.onmessage = (event) => {
+    // Handling data from the processor.
+
+    sharedObject = event;
+//    console.log(sharedObject.data);
+  };
+
+  let pluck = function(stringno){
+    harpNode.port.postMessage({
+      "type": "play",
+      "stringno": stringno
+    });
+  }
+
+  // simple loop
+  let baseDelay = 500; // in milliseconds
+  let loopDelays = new Array(f0s_.length);
+  let initialDelays = [4000, 8100, 5600, 12600, 9200, 14100,3100];
+  loopDelays = [19700, 17800, 21300, 22100, 18400, 20000, 17700].map( (val) => val * 1);
+  for (let stringno = 0; stringno < f0s_.length; stringno++){
+    setTimeout(() => pluck(stringno), initialDelays[stringno]);
+  }
+  for (let stringno = 0; stringno < f0s_.length; stringno++){
+    setInterval(() => {
+      setTimeout(() => pluck(stringno), R.random_num(1500,10000));
+    }, loopDelays[stringno]);
+  }
+}
+
+window.addEventListener("load", event => {
+  document.getElementById("toggle").addEventListener("click", toggleSound);
+});
+
+/**
+  */
+var toggleSound = async function(event) {
+  if (!audioContext) {
+    sketch.audioDemoStart();
+  } else {
+    await audioContext.close();
+    audioContext = null;
+  }
+}
+
+
+// #################
+// visuals
+
+
+
 // params used to decide canvas size
 // as per AB 101
 var DEFAULT_SIZE = 1000
@@ -379,7 +387,7 @@ var endAngle0 = 1*PI;
 var endAngleN = 3*PI;
 var endAngleStep = 0.125*PI;
 var endAngleIndMax = (endAngleN - endAngle0)/endAngleStep;
-var noIter = 7;//R.random_int(3,7);
+var noIter = R.random_int(3,7);
 console.log("noIter = ", noIter);
 var startAngleVec = [0, 0, 0];
 for (let i = 3; i < startAngleIndMax + 3; i++){
@@ -451,22 +459,23 @@ setup = function() {
 
 draw = function() {
 
-  let x = [];
+  let x = new Array(noIter).fill(0.0);
   if (sharedObject.data["msg"] = "analysis")
     {
-      x = sharedObject.data["amplitude"];
+      x[3] = sharedObject.data["amplitude"];
       //console.log("stringno = ", sharedObject.data["stringno"]);
-      console.log(sharedObject.data);
+      // console.log(sharedObject.data);
     };
 
   background(bgCol[0],bgCol[1],bgCol[2],bgCol[3]);
   noFill();
   for (let i = 0; i < noIter; i++)
   {
-    stroke(sColVec[colInd[i]][0], sColVec[colInd[i]][1], sColVec[colInd[i]][2], sColVec[colInd[i]][3]);
+//    stroke(sColVec[colInd[i]][0], sColVec[colInd[i]][1], sColVec[colInd[i]][2], sColVec[colInd[i]][3]);
+    stroke(sColVec[colInd[i]][0], sColVec[colInd[i]][1], sColVec[colInd[i]][2], 10*x[i]);
     strokeWeight(w(sWeight[i]));
   for (let baseNo = 0; baseNo < baseN[i]; baseNo++){
-      drawSpiral(spiralxyVec[i][baseNo], vertexSd[i], scale[i]*100*x, xmean[i], ymean[i], xsd[i], ysd[i]);
+      drawSpiral(spiralxyVec[i][baseNo], vertexSd[i], scale[i], xmean[i], ymean[i], xsd[i], ysd[i]);
     }
   }    
 }
