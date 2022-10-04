@@ -1,13 +1,19 @@
 goog.provide('sketch');
 
 
-let sharedObject = {data:
-                    {
-                      msg: null,
-                      amplitude: [0]
-                    }
-                   };
+// let sharedObject = {data:
+//                     {
+//                       msg: null,
+//                       amplitude: [0],
+//                       vibration: [],
+//                       stringno: 0
+//                     }
+//                    };
 
+window.numStrings = 7; //numStrings;
+window.stringNum = 0;
+window.stringAmplitudes = new Array(window.numStrings).fill(1);
+window.stringVibrations = new Array(window.numStrings).fill(0);
 
 // ##################
 // PRNG class and methods...
@@ -187,7 +193,7 @@ sketch.createMyInstrumentProcessor = async function() {
   } catch(e) {
     try {
       //console.log("adding instrument-processor...")
-      await audioContext.audioWorklet.addModule("js/instrument-processor-hybrid-compiled.js");
+      await audioContext.audioWorklet.addModule("js/instrument-processor-compiled.js");
       myInstrumentNode = new AudioWorkletNode(
         audioContext,
         "instrument-processor",
@@ -214,20 +220,19 @@ sketch.audioDemoStart = async function() {
   }  
 
   // Connect and start
-  
-  harpNode.connect(audioContext.destination);
+    harpNode.connect(audioContext.destination);
 
+  // comms from processor
   harpNode.port.onmessage = (event) => {
-    // Handling data from the processor.
-
-    sharedObject = event;
-//    console.log(sharedObject.data);
+    window.stringAmplitudes[event.data["stringno"]] = event.data["amplitude"];
+    window.stringNum = event.data["stringno"];
   };
 
-  let pluck = function(stringno){
+  // comms to processor
+  let pluck = function(stringnum){
     harpNode.port.postMessage({
       "type": "play",
-      "stringno": stringno
+      "stringnum": stringnum
     });
   }
 
@@ -254,8 +259,10 @@ window.addEventListener("load", event => {
   */
 var toggleSound = async function(event) {
   if (!audioContext) {
+    
     sketch.audioDemoStart();
   } else {
+    window.stringAmplitudes = new Array(window.numStrings).fill(1);
     await audioContext.close();
     audioContext = null;
   }
@@ -378,7 +385,7 @@ var sColVec = [[208, 65, 74, alpha],
                [79, 83, 74, alpha],
                [0, 76, 94, alpha]];
 
-var numVertices = 40;
+var numVertices = 100;
 var startAngle0 = 0;
 var startAngleN = -5*PI;
 var startAngleStep = -0.5*PI;
@@ -387,7 +394,7 @@ var endAngle0 = 1*PI;
 var endAngleN = 3*PI;
 var endAngleStep = 0.125*PI;
 var endAngleIndMax = (endAngleN - endAngle0)/endAngleStep;
-var noIter = R.random_int(3,7);
+var noIter = window.numStrings; //R.random_int(3,7);
 console.log("noIter = ", noIter);
 var startAngleVec = [0, 0, 0];
 for (let i = 3; i < startAngleIndMax + 3; i++){
@@ -436,10 +443,10 @@ for (let iterNo = 0; iterNo < noIter; iterNo++){
   spiralStep[iterNo] = spiralStepVec[R.random_int(0, (spiralStepVec.length - 1))];
   
   if (spiralStep[iterNo] <= 0.01 && vertexSd[iterNo] <= 0.01){
-    sWeight[iterNo] = 0.0005}
+    sWeight[iterNo] = 0.0005} 
   else if ((spiralStep[iterNo] > 0.01 && spiralStep[iterNo] < 0.05) && vertexSd[iterNo] <= 0.01){
     sWeight[iterNo] = 0.001}
-  else {sWeight[iterNo] = 0.00005};
+  else {sWeight[iterNo] = 0.0005};  //changed from 0.00005
   colInd[iterNo] = R.random_int(0, sColVec.length -1);
 
   baseN[iterNo] = (baseEnd - baseStart)/spiralStep[iterNo];
@@ -455,24 +462,25 @@ for (let iterNo = 0; iterNo < noIter; iterNo++){
 setup = function() {
   createCanvas(DIM, DIM);
   colorMode(HSB, 360, 100, 100, 1);
+  frameRate(60);
+}
+
+var amplitudeAmplifier = function(amp,exponent){
+  let ampedAmp = Math.pow(50*amp, exponent);
+  let out;
+  if (ampedAmp > 1.0)
+    out = 1.0
+  else out = ampedAmp;
+  return out;
 }
 
 draw = function() {
-
-  let x = new Array(noIter).fill(0.0);
-  if (sharedObject.data["msg"] = "analysis")
-    {
-      x[3] = sharedObject.data["amplitude"];
-      //console.log("stringno = ", sharedObject.data["stringno"]);
-      // console.log(sharedObject.data);
-    };
 
   background(bgCol[0],bgCol[1],bgCol[2],bgCol[3]);
   noFill();
   for (let i = 0; i < noIter; i++)
   {
-//    stroke(sColVec[colInd[i]][0], sColVec[colInd[i]][1], sColVec[colInd[i]][2], sColVec[colInd[i]][3]);
-    stroke(sColVec[colInd[i]][0], sColVec[colInd[i]][1], sColVec[colInd[i]][2], 10*x[i]);
+    stroke(sColVec[colInd[i]][0], sColVec[colInd[i]][1], sColVec[colInd[i]][2], amplitudeAmplifier(window.stringAmplitudes[i],3));
     strokeWeight(w(sWeight[i]));
   for (let baseNo = 0; baseNo < baseN[i]; baseNo++){
       drawSpiral(spiralxyVec[i][baseNo], vertexSd[i], scale[i], xmean[i], ymean[i], xsd[i], ysd[i]);
