@@ -21,7 +21,11 @@
             [quil-site.views.luthchleasa :refer [luthchleasa-page]]
             [quil-site.views.luthchleasa-documentation :refer [luthchleasa-documentation-page]]
             [quil-site.views.ab :refer [ab-page]]
-            [quil-site.views.ab-as :refer [ab-as-page]]            
+            [quil-site.views.ab-as :refer [ab-as-page]]
+            [quil-site.views.essays :refer [essays-page]]
+            [quil-site.views.essay-why-lfgav-art-1 :refer [essay-why-lfgav-art-1-page]]
+            [quil-site.views.essay-why-I-combine-IRL-and-digital-voice-and-harp-av :refer [essay-why-I-combine-IRL-and-digital-voice-and-harp-av-page]]
+            [quil-site.views.essay-the-role-of-live-performance-in-how-I-make-av-art :refer [essay-the-role-of-live-performance-in-how-I-make-av-art-page]]
             [quil-site.views.contact :refer [contact-page]]
             )
   (:gen-class))
@@ -41,7 +45,11 @@
   (GET "/luthchleasa" [] (luthchleasa-page))
   (GET "/luthchleasa-documentation" [] (luthchleasa-documentation-page))
   (GET "/ab" [] (ab-page))
-  (GET "/ab/artist-statement" [] (ab-as-page))  
+  (GET "/ab/artist-statement" [] (ab-as-page))
+  (GET "/essays" [] (essays-page))
+  (GET "/essay-why-I-make-lfgav-art" [] (essay-why-lfgav-art-1-page))
+  (GET "/essay-why-I-combine-IRL-and-digital" [] (essay-why-I-combine-IRL-and-digital-voice-and-harp-av-page))
+  (GET "/essay-the-role-of-live-performance-in-how-I-make-av-art" [] (essay-the-role-of-live-performance-in-how-I-make-av-art-page))
   (GET "/contact" [] (contact-page))
   (GET "/contact-post" [] (contact-page))
   (GET "/favicon.ico" [] {:status 204})
