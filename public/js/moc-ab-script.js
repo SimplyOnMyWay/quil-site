@@ -10,11 +10,6 @@ goog.provide('sketch');
 //                     }
 //                    };
 
-window.numStrings = 7; //numStrings;
-window.stringNum = 0;
-window.stringAmplitudes = new Array(window.numStrings).fill(1);
-window.stringVibrations = new Array(window.numStrings).fill(0);
-
 // ##################
 // PRNG class and methods...
 
@@ -161,6 +156,11 @@ var R = new sketch.random();
 
 // #################
 // audio
+
+window.numStrings = R.random_int(7,17); //numStrings;
+window.stringNum = 0;
+window.stringAmplitudes = new Array(window.numStrings).fill(1);
+window.stringVibrations = new Array(window.numStrings).fill(0);
 
 let audioContext = null;
 // mode palette
@@ -408,16 +408,16 @@ var startAngle = new Array(noIter).fill(0);
 var endAngle = new Array(noIter).fill(0);
 var xmeanVec = new Array(18).fill(0); var xmean = new Array(noIter).fill(0);
 var ymeanVec = new Array(18).fill(0); var ymean = new Array(noIter).fill(0);
-var vertexSdVec = [0, R.random_pareto_bounded(0.01, 0.1, 0.1)]; var vertexSd = new Array(noIter).fill(0);
-var scaleVec = [10, R.random_pareto_bounded(5, 20, 1.16)]; var scale = [];//new Array(noIter).fill(0);
+var vertexSdVec = [0, R.random_pareto_bounded(0.001, 0.03, 0.1)];
+var vertexSd = new Array(noIter).fill(0);
 var spiralStepVec = [0.005, R.random_pareto_bounded(0.005, 0.1, 1.16)]; var spiralStep = new Array(noIter).fill(0);
+var scaleVec = [10, R.random_pareto_bounded(10, 50, 1.16)]; var scale = [];//new Array(noIter).fill(0);
 var sWeight = new Array(noIter).fill(0);
 var colInd = [];
 //let xsdVec = [0, R.random_pareto_bounded(0.01, 2, 0.1)];
 var xsd = 0; //xsdVec[R.random_int(0, (xsdVec.length - 1))];
 //let ysdVec = [0, xsd/10, xsd];
 var ysd = 0; //ysdVec[R.random_int(0, (ysdVec.length - 1))];
-
 var spiralxyVec = [];
 var baseVec = [];
 var baseStart = 1.0;
@@ -487,7 +487,3 @@ draw = function() {
     }
   }    
 }
-
-
-
-

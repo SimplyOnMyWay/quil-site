@@ -56,15 +56,17 @@
               [:h3 "Working Prototype"]
               [:p {} "This evolving work in progress consists:"]
               [:ul {}
-               [:li {} "" [:a {:href "#gen-art"} "rendered artwork."] " Click or scroll down, and reload page to generate a fresh iteration!"]
+               [:li {} "" [:a {:href "#gen-art"} "rendered artwork."] " Click or scroll down, and reload page to generate a fresh iteration! Click the button for generative audio!!"]
                [:li {} "" [:a {:href "cljs/dynamic.cljs"} "clojurescript code. "] "I normally make generative art in clojurescript.  I love this language and how well suited it is for generative art."]
-               [:li {} "" [:a {:href "js/moc-ab-script.js"} "p5.js script, unminified. "] "For Art Blocks I port from clojurescript to google closure compatible javascript."]
-               [:li {} [:a {:href "js/moc-ab-script-compiled-a.js"} "p5.js script, minified. "] "I minify my javascript code using the google closure compiler."]
+               [:li {} "" [:a {:href "js/moc-ab-script.js"} "Main script, with visuals using p5.js library, and generative audio in vanilla javascript. "] "For Art Blocks I port from clojurescript to google closure compatible javascript."]
+               [:li {} "" [:a {:href "js/instrument-processor.js"} "Audio worklet javascript file, unminified. "] "Heavy audio digital signal processing (DSP) is done in an audio worklet, necessitating a separate javascript file called by the main script. Again written in google closure compatible format"]
+               [:li {} [:a {:href "js/moc-ab-script-compiled-a.js"} "Main script (p5.js visual with vanilla JS audio), minified. "] "I minify my main script using the google closure compiler."]
+               [:li {} [:a {:href "js/instrument-processor-compiled.js"} "Audio worklet javascript file, minified. "] "Again I minify my audio worklet code (vanilla javascript) using the google closure compiler."]
                ]
 
               [:br]
 
-              [:p {} "Please be aware that generative audio is currently in progress and not yet included in this prototype.  A generative system of audio, based on synthesis of my early Gaelic harp as well as sythesised vocals suitable for minified on-chain code, is currently my main focus. This prototype will be updated soon to include this generative audio."]
+              [:p {} "This prototype is still in development.  Next step is to confirm that the use of a separate audio worklet javascript file to the main script is legitimate for Art Blocks.  The fidelity of the audio, to sound closer to the acoustic harp it models also requires focus. Exploration of parameter spaces, both from a music composition and visual perspective, has only commenced. Clearly work has yet to start in earnest on colour palettes also.  My hope is that, subject to confirmation of the separate audio worklet file being legitimate, the prototype will evolve relatively quickly to readiness for the curation board."]
               
               [:p {} [:strong {} " - Mícheál Ó Catháin ..."]]
               ]
@@ -76,13 +78,5 @@
 
 
              ]]]]]
-
         
         ))
-
-
-
-
-
-
-
