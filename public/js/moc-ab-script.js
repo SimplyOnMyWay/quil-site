@@ -147,7 +147,7 @@ var R = new sketch.random();
 // #################
 // audio
 
-window.numStrings = 1; //R.random_int(7,17); //numStrings;
+window.numStrings = 7; //R.random_int(7,17); //numStrings;
 window.stringNum = 0;
 window.stringAmplitudes = new Array(window.numStrings).fill(1);
 window.stringVibrations = new Array(window.numStrings).fill(0);
@@ -335,6 +335,53 @@ var goldenSpiralr = function(theta, base) {
 }
 
 /**
+ * Construct genThetaVec
+ * @param {number} b base
+ * @param {number} s startAngle
+ * @param {number} e endAngle
+ * @param {number} N numberVertices
+ * @param {number} sc scale
+ * @return {Array.<number>}
+ */
+var genThetaVec = function(b,s,e,N,sc){
+  let thetaVecPos = [0]; 
+  let thetaVecNeg = [0]; // to be reversed later... theta = 0 will then be last value in array
+  let r0 = goldenSpiralr(0,b); //change to (b,s)? test later...
+  let re = goldenSpiralr(e,b);
+  let posNegRatio = e / (e - s);
+  //pos angles
+  let NPos = N*posNegRatio;
+  let NNeg = N*(1 - posNegRatio);
+  console.log("s,e,N, NPos,NNeg,r0,re = ",s,e,N,NPos,NNeg,r0,re);
+  
+  let d = 2*r0;
+  let D = 2*re;
+  let n = e / (2*PI);
+  let L = PI*n*(D+d)/2;
+  let scale = sc*0.1;
+  let scalePow = Math.pow(b,3);
+  let NPosScaled = Math.trunc(NPos * scalePow / scale)
+  let l = L / NPosScaled; //target arc length btwn vertices
+  for (let i=1; i < NPosScaled; i++){
+    thetaVecPos[i] = thetaVecPos[i-1] + (l / goldenSpiralr(thetaVecPos[i-1],b));
+  }
+  thetaVecPos.shift();//note shift is equiv to (drop 1) in cljs  
+  console.log("thetaVecPos = ",thetaVecPos);
+  //neg angle
+  let NNegScaled = Math.trunc(NNeg * scalePow / scale);
+  console.log("NPosScaled,NNegScaled = ", NPosScaled,NNegScaled);
+  for (let i=1; i < NNegScaled; i++){
+    thetaVecNeg[i] = thetaVecNeg[i-1] - (l / goldenSpiralr(thetaVecNeg[i-1],b));
+  }
+  thetaVecNeg = thetaVecNeg.reverse();
+  console.log("thetaVecNeg = ",thetaVecNeg);
+                              
+  //combine into thetaVec
+  let theta_Vec = thetaVecNeg.concat(thetaVecPos);
+  return theta_Vec;
+}
+
+/**
  * Construct spiralxyVec 
  * @param {number} base
  * @param {number} startAngle
@@ -342,27 +389,12 @@ var goldenSpiralr = function(theta, base) {
  * @param {number} numberVertices
  * @return {Array.<Object>}
  */
-var genSpiralxyVec = function(base, startAngle, endAngle, numberVertices) {
-  let step = (endAngle - startAngle) / numberVertices;
-  let res = 0.0001;
-
-  //  let thetaVec = [startAngle];
-  const cumsum = (sum => val => sum += val)(0);
-
-//  let fibrev = fib(numberVertices-1).reverse(); // ratio of angles I want from startAngle to endAngle, based on reversed fibonacci series
-  let fibrev = new Array(numberVertices).fill(1);
-  let fibrevsum = fibrev.reduce((total,current)=>{return total + current},0)
-  let fibrevnorm = fibrev.map((x)=>{return x / fibrevsum});
-  let fibrevnormcum = fibrevnorm.map(cumsum);
-  let thetaVec = fibrevnormcum.map((x)=>{return x * endAngle});
-  
-  let rVec = []; //[goldenSpiralr(0, base)];
-  let spiralxyVec = []; // [[rVec[0]*Math.cos(thetaVec[0]),rVec[0]*Math.sin(thetaVec[0])]];
+var genSpiralxyVec = function(base, startAngle, endAngle, numberVertices, scale) {
+  let thetaVec = genThetaVec(base,startAngle,endAngle,numberVertices,scale);
+  let rVec = []; 
+  let spiralxyVec = [];
   //note <=, without this small numberVertices values result in endAngle not being quite reached 
-  for (let i = 0; i <= numberVertices; i++) {
-//    thetaVec[i] = startAngle + step*i;
-    
-//    thetaVec[i] = (w(res)/rVec[i-1]) + thetaVec[i-1];
+  for (let i = 0; i < thetaVec.length; i++) {
     rVec[i] = goldenSpiralr(thetaVec[i], base);
     spiralxyVec[i] = [rVec[i]*Math.cos(thetaVec[i]),rVec[i]*Math.sin(thetaVec[i])];
   }
@@ -392,14 +424,11 @@ var drawSpiral = function(spiralxyVec, vertexSd, scale, xmean, ymean, xsd, ysd) 
     let s = spiralxyVec[i];
     let v = [R.random_gaussian(s[0], vertexSd)/scale, R.random_gaussian(s[1], vertexSd)/scale];
     vertex(w(v[0]), h(v[1]));
-//    point(w(v[0]), h(v[1]));
+    point(w(v[0]), h(v[1]));
   }
   endShape();
   translate(w(-x),h(-y));
 }
-
-
-
 
 var alpha = 1.0; //0.68;
 var sColVec = [[48, 42, 27, 1.0],
@@ -408,10 +437,11 @@ var sColVec = [[48, 42, 27, 1.0],
                [79, 83, 74, alpha],
                [0, 76, 94, alpha]];
 
-var bgCol = R.random_choice(sColVec);
+var bgCol = [220, 80, 60, 1.0];//sColVec[0];
+//var bgCol = R.random_choice(sColVec);
 //console.log("background colour = " bgCol);
 
-var numVertices = 100;
+var numVertices = 50;
 var startAngle0 = 0;
 var startAngleN = -5*PI;
 var startAngleStep = -0.5*PI;
@@ -421,7 +451,6 @@ var endAngleN = 3*PI;
 var endAngleStep = 0.125*PI;
 var endAngleIndMax = (endAngleN - endAngle0)/endAngleStep;
 var noIter = window.numStrings; //R.random_int(3,7);
-//console.log("noIter = ", noIter);
 var startAngleVec = [0, 0, 0];
 for (let i = 3; i < startAngleIndMax + 3; i++){
   startAngleVec[i] = startAngle0 + (i - 3)*startAngleStep;
@@ -437,7 +466,7 @@ var ymeanVec = new Array(18).fill(0); var ymean = new Array(noIter).fill(0);
 var vertexSdVec = [0, R.random_num(0,0)]; // [0, R.random_pareto_bounded(0.001, 0.03, 0.1)];  VERY PECULIAR, CANT'T REPLACE WITH [0,0] or [0] seems to need the random call
 var vertexSd = new Array(noIter).fill(0);
 var spiralStepVec = [0.005, R.random_pareto_bounded(0.005, 0.1, 1.16)]; var spiralStep = new Array(noIter).fill(0);
-var scaleVec = [10, R.random_pareto_bounded(10, 50, 1.16)]; var scale = [];//new Array(noIter).fill(0);
+var scaleVec = [10, R.random_pareto_bounded(10, 50, 1.16)]; var scale = []; //new Array(noIter).fill(0);
 var sWeight = new Array(noIter).fill(0);
 var colInd = [];
 //let xsdVec = [0, R.random_pareto_bounded(0.01, 2, 0.1)];
@@ -474,13 +503,13 @@ for (let iterNo = 0; iterNo < noIter; iterNo++){
   else if ((spiralStep[iterNo] > 0.01 && spiralStep[iterNo] < 0.05) && vertexSd[iterNo] <= 0.01){
     sWeight[iterNo] = 0.001}
   else {sWeight[iterNo] = 0.0005};  //changed from 0.00005
-  colInd[iterNo] = R.random_int(0, sColVec.length -1);
+  colInd[iterNo] = R.random_int(1, sColVec.length -1);
 
   baseN[iterNo] = (baseEnd - baseStart)/spiralStep[iterNo];
   let spiralxyVec_ = [];
   for (let baseNo = 0; baseNo < baseN[iterNo]; baseNo++){
     baseVec[baseNo] = baseStart + baseNo * spiralStep[iterNo];
-    spiralxyVec_[baseNo] = genSpiralxyVec(baseVec[baseNo], startAngle[iterNo], endAngle[iterNo], numVertices);
+    spiralxyVec_[baseNo] = genSpiralxyVec(baseVec[baseNo], startAngle[iterNo], endAngle[iterNo], numVertices, scale[iterNo]);
   }
   spiralxyVec[iterNo] = spiralxyVec_;
 }
@@ -514,3 +543,14 @@ draw = function() {
     }
   }    
 }
+
+
+
+
+
+
+
+
+
+
+

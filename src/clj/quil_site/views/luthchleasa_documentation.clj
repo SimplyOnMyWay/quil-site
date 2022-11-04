@@ -18,22 +18,34 @@
            [:div {:class "content"}
             [:div {:class "columns"}
 
-             [:div {:class "column"}
-              [:h2 {} [:strong {} "Video and photo documentation of Lúthchleasa @ Galway Arts Centre"]]
-              ;;[:h2 {} [:strong {} "Video Documentation (4min)"]]
-              [:br]
-              [:br]
+             [:h2 {} [:strong {} "Video and photo documentation of "]]
+             [:h2 {} [:strong {} "Lúthchleasa [lu:hxlˈæsə]"]]
+             [:h2 {} [:strong {} "@ Galway Arts Centre / December 2021"]]
+             ;; toc at top of page with links to sections...
+             [:a {:href "#vi"} "Video"]
+             [:br]
+             [:a {:href "#ga"} "Gallery Photos"]
+             [:br]
+             [:a {:href "#fr"} "Framed Work"]
+             [:br]
+             [:a {:href "#pu"} "Publicity"]
+             
+             [:div {:class "column" :id "vi"}
+              [:h3 {} [:strong {} "Video"]]
+              ;; Mini-film
               [:p {}  "Click play and select fullscreen to view video (4min):"]
               [:div {:style="padding:56.25% 0 0 0;position:relative;"}
                [:iframe {:src "https://player.vimeo.com/video/662073256?h=a1efa9580f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" :allowfullscreen "allowfullscreen" :allowfullscreenstyle "position:absolute;top:0;left:0;width:100%;height:100%;" :title "L&amp;uacute;thchleasa Solo Exhibition @ Galway Arts Centre /// December 2021" :width "480" :height "270"  :frameborder "0"
                          }]]
               ;; :allow "autoplay; fullscreen; picture-in-picture"
               [:script {:src "https://player.vimeo.com/api/player.js"}]
-              [:br]
-              [:br]              
-              ;;[:h2 {} [:strong {} "Photo Documentation"]]
-              [:p {}  "Click on each thumbnail for higher resolution image:"]
-         ;;     [:br]
+
+              ]
+
+             [:div {:class "column" :id "ga"}
+              [:h3 {} [:strong {} "Gallery Photos"]]
+              [:p {}  "Click on each thumbnail for a high resolution image:"]
+              ;;     [:br]
               [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_2.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_2.jpg", :width "20%"}]]
               [:br]
               [:br]
@@ -88,41 +100,45 @@
               [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_56.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_56.jpg", :width "20%"}]]
 
               [:br]
-              [:h2 {} [:strong {} "Write ups:"]]
-              [:p [:a {:href "https://www.galwayartscentre.ie/exhibitions/382-luthchleasa-lu-hxl-aes-by-micheal-o-cathain?lang=en"}"Gallery Text"]]
+              [:p "(Photographer: Tom Flanagan)"]
+              [:br]]
+
+             ;; framed work
+             [:div {:class "column" :id "fr"}
+              [:h3 {} [ :strong {} "Framed Work (October 2022)"]]
+              [:p {}  "Click on each thumbnail for a high resolution image:"]
+              [:a {:href "../img/art/luthchleasa_documentation/luis-1-standard-c.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-1-standard-c-1000x1000.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luis-1-left.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-1-left-1000x1000.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luis-1-tl.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-1-tl-1000x1000.jpg", :width "20%"}]]
+
+              [:br]
+              [:br]
+              [:br]                            
+
+              [:a {:href "../img/art/luthchleasa_documentation/luis-2-left.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-2-left-1000x1000.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luis-2-standard-b.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-2-standard-b-1000x1000.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luis-2-br.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-2-br-1000x1000.jpg", :width "20%"}]]
+
+              [:br]
+              [:br]
+              [:br]
+              
+              [:a {:href "../img/art/luthchleasa_documentation/luis-5-br.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-5-tr-1000x1000.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luis-5-left.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-5-left-1000x1000.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luis-5-standard-f.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-5-standard-f-1000x1000.jpg", :width "20%"}]]
+              
+              [:br]]
+
+
+             [:div {:class "column" :id "pu"}
+              [:h3 {} [:strong {} "Publicity:"]]
+              [:p [:a {:href "https://www.galwayartscentre.ie/exhibitions/382-luthchleasa-lu-hxl-aes-by-micheal-o-cathain?lang=en"}"Artist Statement & Bio"]]
+              [:p [:a {:href "../img/art/luthchleasa_documentation/Luthchleasa-GAC-2021-Gallery-Text.pdf"}"Gallery Text"]]
               [:p [:a {:href "https://www.galwaydaily.com/arts-entertainment/galway-arts-centre-announces-december-programme/"}"Galway Daily, 04.12.2021"]]
               [:p [:a {:href "https://www.advertiser.ie/galway/article/126241/three-exhibitions-open-today-at-galway-arts-centre"}"Galway Advertiser, 08.12.2021"]]
               [:p [:a {:href "https://connachttribune.ie/east-and-west-meet-in-arts-centre-exhibitions/"} "Connacht Tribune, 10.12.2021"]]
-              [:br]
+              [:br]]
 
-    
-
-
-
-
-
-
-              ]]]]]
-
-
-
-
-
-         [:div.row.examples
-          [:div#template {:class "col-md-4 col-sm-6 col-xs-12 hidden"}
-           [:div.example
-            [:div.name]
-            [:div.author]
-            [:div.canvas-container
-             "here"
-             [:div.play.hidden]]
-            [:div.footer
-             [:span.glyphicon.glyphicon-sort.hidden
-              {:data-toggle "tooltip"
-               :data-placement "bottom"
-               :title (str "Interactive. Select to start interacting using "
-                           "mouse/keyboard.")}]
-             [:a "source"]
-             [:span.glyphicon.glyphicon-pause.hidden.pause]]]]]]))
+             ]]]]]))
 
 
