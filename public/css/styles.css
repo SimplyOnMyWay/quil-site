@@ -289,3 +289,8 @@ body .container.api a {
 .hormargins {
     margin: 0% 1.5% 0% 1.5%;
 }
+
+.hormarginstight {
+    margin: 0% 0.75% 0% 0.75%;
+}
+
