@@ -27,20 +27,20 @@
                 [:img {:class "hormargins" :src "../img/art/luthchleasa/beith-01-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center"}
                 [:span {:style "font-size:13px"} [:em "Barrlúth"]]
-                [:span {:style "font-size:9px"} [:br] "400x400mm (unframed)" [:br] "2021" [:br] "1/1" [:br] "€390 + P&P (unframed)"]]]
+                [:span {:style "font-size:9px"} [:br] "400x400mm (unframed)" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P (unframed)"]]]
               [:figure {:class "hormargins" :style "width:30%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/beith-02-1000x1000.jpg"}
                 [:img {:class "hormargins" :src "../img/art/luthchleasa/beith-02-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center;"} ]
                [:figcaption {:style "text-align:center"}
                 [:span {:style "font-size:13px"} [:em "Barrlúth oscailte II"]]
-                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€390 + P&P"]]]
+                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P"]]]
               [:figure {:class "hormargins" :style "width:30%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/beith-03-1000x1000.jpg"}
                 [:img {:class "hormargins" :src "../img/art/luthchleasa/beith-03-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center"}
                 [:span {:style "font-size:13px"} [:em "Barrlúth oscailte I"]]
-                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€390 + P&P"]]]
+                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P"]]]
 
               [:h3 {} [:strong {} "Coll Series"]]
               [:p {} [:strong {} "Digital archival prints on Hahnemühle Museum Etching paper, with deckled edge"]]
@@ -50,19 +50,19 @@
                 [:img {:class "hormargins" :src "../img/art/luthchleasa/coll-01-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center"}
                 [:span {:style "font-size:13px"} [:em "Cúl aithris I"]]
-                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€390 + P&P"]]]
+                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P"]]]
               [:figure {:class "hormargins" :style "width:30%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/coll-02-1000x1000.jpg"}
                 [:img {:class "hormargins" :src "../img/art/luthchleasa/coll-02-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center"}
                 [:span {:style "font-size:13px"} [:em "Caslúth"]]
-                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€390 + P&P"]]]
+                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P"]]]
               [:figure {:class "hormargins" :style "width:30%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/coll-03-1000x1000.jpg"}
                 [:img {:class "hormargins" :src "../img/art/luthchleasa/coll-03-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center"}
                 [:span {:style "font-size:13px"} [:em "Cúl aithris II"]]
-                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€390 + P&P"]]]
+                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P"]]]
 
               [:h3 {} [:strong {} "Fearn Series"]]
               [:p {} [:strong {} "Digital archival prints on Hahnemühle Museum Etching paper, with straight edge"]]
@@ -180,21 +180,21 @@
                [:figcaption {:style "text-align:center;"} ]
                [:figcaption {:style "text-align:center"}
                 [:span {:style "font-size:13px"} [:em "Taobhchrobh"]]
-                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€390 + P&P"]]]
+                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P"]]]
               [:figure {:class "hormargins" :style "width:30%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/luis-02-1000x1000.jpg"}
                 [:img {:class "hormargins" :src "../img/art/luthchleasa/luis-02-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center;"} ]
                [:figcaption {:style "text-align:center"}
                 [:span {:style "font-size:13px"} [:em "Ceann an chruibh I"]]
-                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€390 + P&P"]]]
+                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P"]]]
               [:figure {:class "hormargins" :style "width:30%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/luis-03-1000x1000.jpg"}
                 [:img {:class "hormargins" :src "../img/art/luthchleasa/luis-03-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center;"} ]
                [:figcaption {:style "text-align:center"}
                 [:span {:style "font-size:13px"} [:em "Lánchrobh"]]
-                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€390 + P&P"]]]
+                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P"]]]
               [:br]
               [:br]
               [:figure {:class "hormargins" :style "width:30%;display:inline-block;"}
@@ -203,14 +203,14 @@
                [:figcaption {:style "text-align:center;"} ]
                [:figcaption {:style "text-align:center"}
                 [:span {:style "font-size:13px"} [:em "Ceann an chruibh II"]]
-                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€390 + P&P"]]]
+                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P"]]]
               [:figure {:class "hormargins" :style "width:30%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/luis-05-1000x1000.jpg"}
                 [:img {:class "hormargins" :src "../img/art/luthchleasa/luis-05-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center;"} ]
                [:figcaption {:style "text-align:center"}
                 [:span {:style "font-size:13px"} [:em "Glaslúth"]]
-                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€390 + P&P"]]]              
+                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P"]]]              
               [:h3 {} [:strong {} "Sail Series"]]
               [:p {} [:strong {} "Digital archival prints on Hahnemühle Museum Etching paper, with deckled edge"]]
               [:p {}  "Frame visualisation is indicative only. Dimensions and prices unframed. Click on each thumbnail for a higher resolution image of the artwork."]
@@ -220,20 +220,20 @@
                [:figcaption {:style "text-align:center;"} ]
                [:figcaption {:style "text-align:center"}
                 [:span {:style "font-size:13px"} [:em "Sruth beag I"]]
-                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€390 + P&P"]]]
+                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P"]]]
               [:figure {:class "hormargins" :style "width:30%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/sail-02-1000x1000.jpg"}
                 [:img {:class "hormargins" :src "../img/art/luthchleasa/sail-02-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center;"} ]
                [:figcaption {:style "text-align:center"}
                 [:span {:style "font-size:13px"} [:em "Sruth beag II"]]
-                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€390 + P&P"]]]                        [:figure {:class "hormargins" :style "width:30%;display:inline-block;"}
+                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P"]]]                        [:figure {:class "hormargins" :style "width:30%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/sail-03-1000x1000.jpg"}
                 [:img {:class "hormargins" :src "../img/art/luthchleasa/sail-03-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center;"} ]
                [:figcaption {:style "text-align:center"}
                 [:span {:style "font-size:13px"} [:em "Suas éirí"]]
-                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€390 + P&P"]]]
+                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P"]]]
               [:br]
               [:br]
               [:figure {:class "hormargins" :style "width:30%;display:inline-block;"}
@@ -242,14 +242,14 @@
                [:figcaption {:style "text-align:center;"} ]
                [:figcaption {:style "text-align:center"}
                 [:span {:style "font-size:13px"} [:em "Sruth mór suas"]]
-                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€390 + P&P"]]]
+                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P"]]]
               [:figure {:class "hormargins" :style "width:30%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/sail-05-1000x1000.jpg"}
                 [:img {:class "hormargins" :src "../img/art/luthchleasa/sail-05-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center;"} ]
                [:figcaption {:style "text-align:center"}
                 [:span {:style "font-size:13px"} [:em "Sruth mór síos"]]
-                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€390 + P&P"]]]
+                [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P"]]]
 
               [:br]
               [:br]
