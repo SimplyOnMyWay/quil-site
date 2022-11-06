@@ -57,59 +57,39 @@
               [:h3 {} [:strong {} "Gallery Photos"]]
               [:p {}  "Click on each thumbnail for a high resolution image:"]
               ;;     [:br]
-              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_2.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_2.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_2.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_2.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_5.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_5.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_9.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_9.jpg", :width "20%"}]]
               [:br]
               [:br]
-              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_5.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_5.jpg", :width "20%"}]]
+              [:br]                                          
+              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_14.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_14.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_17.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_17.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_20.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_20.jpg", :width "20%"}]]
               [:br]
               [:br]
-              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_9.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_9.jpg", :width "20%"}]]
+              [:br]                                          
+              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_20.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_23.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_25.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_25.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_28.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_28.jpg", :width "20%"}]]
               [:br]
               [:br]
-              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_14.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_14.jpg", :width "20%"}]]
+              [:br]                                          
+              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_33.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_33.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_36.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_36.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_38.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_38.jpg", :width "20%"}]]
               [:br]
               [:br]
-              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_17.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_17.jpg", :width "20%"}]]
+              [:br]                                          
+              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_43.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_43.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_46.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_46.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_48.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_48.jpg", :width "20%"}]]
               [:br]
               [:br]
-              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_20.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_20.jpg", :width "20%"}]]
-              [:br]
-              [:br]
-              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_20.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_23.jpg", :width "20%"}]]
-              [:br]
-              [:br]
-              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_25.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_25.jpg", :width "20%"}]]
-              [:br]
-              [:br]
-              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_28.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_28.jpg", :width "20%"}]]
-              [:br]
-              [:br]
-              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_33.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_33.jpg", :width "20%"}]]
-              [:br]
-              [:br]
-              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_36.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_36.jpg", :width "20%"}]]
-              [:br]
-              [:br]
-              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_38.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_38.jpg", :width "20%"}]]
-              [:br]
-              [:br]
-              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_43.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_43.jpg", :width "20%"}]]
-              [:br]
-              [:br]                            
-              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_46.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_46.jpg", :width "20%"}]]
-              [:br]
-              [:br]
-              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_48.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_48.jpg", :width "20%"}]]
-              [:br]
-              [:br]
-              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_52.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_52.jpg", :width "20%"}]]
-              [:br]
-              [:br]
-              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_54.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_54.jpg", :width "20%"}]]
-              [:br]
-              [:br]
-              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_56.jpg"} [:img {:class "alignnone ", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_56.jpg", :width "20%"}]]
-
+              [:br]                                          
+              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_52.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_52.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_54.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_54.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luthchleasa_56.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luthchleasa_56.jpg", :width "20%"}]]
               [:br]
               [:p "(Photographer: Tom Flanagan)"]
               [:br]]
@@ -121,11 +101,9 @@
               [:a {:href "../img/art/luthchleasa_documentation/luis-1-standard-c.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-1-standard-c-1000x1000.jpg", :width "20%"}]]
               [:a {:href "../img/art/luthchleasa_documentation/luis-1-left.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-1-left-1000x1000.jpg", :width "20%"}]]
               [:a {:href "../img/art/luthchleasa_documentation/luis-1-tl.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-1-tl-1000x1000.jpg", :width "20%"}]]
-
               [:br]
               [:br]
               [:br]                            
-
               [:a {:href "../img/art/luthchleasa_documentation/luis-2-left.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-2-left-1000x1000.jpg", :width "20%"}]]
               [:a {:href "../img/art/luthchleasa_documentation/luis-2-standard-b.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-2-standard-b-1000x1000.jpg", :width "20%"}]]
               [:a {:href "../img/art/luthchleasa_documentation/luis-2-br.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-2-br-1000x1000.jpg", :width "20%"}]]
@@ -151,20 +129,20 @@
                [:a {:href "../img/art/luthchleasa/beith-01-1000x1000.jpg"}
                 [:img {:class "hormargins" :src "../img/art/luthchleasa/beith-01-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center"}
-                [:span {:style "font-size:13px"} [:em "Barrlúth"]]
+                [:span {:style "font-size:12px"} [:em "Barrlúth"]]
                 [:span {:style "font-size:9px"} [:br] "400x400mm (unframed)" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P (unframed)"]]]
               [:figure {:class "hormargins" :style "width:30%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/beith-02-1000x1000.jpg"}
                 [:img {:class "hormargins" :src "../img/art/luthchleasa/beith-02-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center;"} ]
                [:figcaption {:style "text-align:center"}
-                [:span {:style "font-size:13px"} [:em "Barrlúth oscailte II"]]
+                [:span {:style "font-size:12px"} [:em "Barrlúth oscailte II"]]
                 [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P"]]]
               [:figure {:class "hormargins" :style "width:30%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/beith-03-1000x1000.jpg"}
                 [:img {:class "hormargins" :src "../img/art/luthchleasa/beith-03-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center"}
-                [:span {:style "font-size:13px"} [:em "Barrlúth oscailte I"]]
+                [:span {:style "font-size:12px"} [:em "Barrlúth oscailte I"]]
                 [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P"]]]
               [:br]
               [:br]
@@ -176,19 +154,19 @@
                [:a {:href "../img/art/luthchleasa/coll-01-1000x1000.jpg"}
                 [:img {:class "hormargins" :src "../img/art/luthchleasa/coll-01-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center"}
-                [:span {:style "font-size:13px"} [:em "Cúl aithris I"]]
+                [:span {:style "font-size:12px"} [:em "Cúl aithris I"]]
                 [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P"]]]
               [:figure {:class "hormargins" :style "width:30%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/coll-02-1000x1000.jpg"}
                 [:img {:class "hormargins" :src "../img/art/luthchleasa/coll-02-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center"}
-                [:span {:style "font-size:13px"} [:em "Caslúth"]]
+                [:span {:style "font-size:12px"} [:em "Caslúth"]]
                 [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P"]]]
               [:figure {:class "hormargins" :style "width:30%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/coll-03-1000x1000.jpg"}
                 [:img {:class "hormargins" :src "../img/art/luthchleasa/coll-03-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center"}
-                [:span {:style "font-size:13px"} [:em "Cúl aithris II"]]
+                [:span {:style "font-size:12px"} [:em "Cúl aithris II"]]
                 [:span {:style "font-size:9px"} [:br] "400x400mm" [:br] "2021" [:br] "1/1" [:br] "€415 + P&P"]]]
               [:br]
               [:br]
@@ -207,44 +185,44 @@
               [:figure {:class "hormarginstight" :style "width:10%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/fearn-01-1000x1000.jpg"}
                 [:img {:class "hormarginstight" :src "../img/art/luthchleasa/fearn-01-thumbnail-framed.png" :width "100%"}]]
-               [:figcaption {:style "text-align:center"}
-                [:span {:style "font-size:13px"} [:em "Leagadh anuas I"]]
+               [:figcaption {:style "text-align:center;height:80px"}
+                [:span {:style "font-size:12px"} [:em "Leagadh anuas I"]]
                 [:span {:style "font-size:9px"} [:br] "141x121mm" [:br] "2021" [:br] "1/1" [:br] "€95 + P&P"]]]
               [:figure {:class "hormarginstight" :style "width:10%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/fearn-02-1000x1000.jpg"}
                 [:img {:class "hormarginstight" :src "../img/art/luthchleasa/fearn-02-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center"}
-                [:span {:style "font-size:13px"} [:em "Leagadh anuas II"]]
+                [:span {:style "font-size:12px"} [:em "Leagadh anuas II"]]
                 [:span {:style "font-size:9px"} [:br] "141x121mm" [:br] "2021" [:br] "1/1" [:br] "€95 + P&P"]]]
               [:figure {:class "hormarginstight" :style "width:10%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/fearn-03-1000x1000.jpg"}
                 [:img {:class "hormarginstight" :src "../img/art/luthchleasa/fearn-03-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center"}
-                [:span {:style "font-size:13px"} [:em "Leath leagadh I"]]
+                [:span {:style "font-size:12px"} [:em "Leath leagadh I"]]
                 [:span {:style "font-size:9px"} [:br] "141x121mm" [:br] "2021" [:br] "1/1" [:br] "€95 + P&P"]]]
               [:figure {:class "hormarginstight" :style "width:10%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/fearn-04-1000x1000.jpg"}
                 [:img {:class "hormarginstight" :src "../img/art/luthchleasa/fearn-04-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center"}
-                [:span {:style "font-size:13px"} [:em "Leagadh anuas III"]]
+                [:span {:style "font-size:12px"} [:em "Leagadh anuas III"]]
                 [:span {:style "font-size:9px"} [:br] "141x121mm" [:br] "2021" [:br] "1/1" [:br] "€95 + P&P"]]]
               [:figure {:class "hormarginstight" :style "width:10%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/fearn-05-1000x1000.jpg"}
                 [:img {:class "hormarginstight" :src "../img/art/luthchleasa/fearn-05-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center"}
-                [:span {:style "font-size:13px"} [:em "Leath leagagh II"]]
+                [:span {:style "font-size:12px"} [:em "Leath leagadh II"]]
                 [:span {:style "font-size:9px"} [:br] "141x121mm" [:br] "2021" [:br] "1/1" [:br] "€95 + P&P"]]]
               [:figure {:class "hormarginstight" :style "width:10%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/fearn-06-1000x1000.jpg"}
                 [:img {:class "hormarginstight" :src "../img/art/luthchleasa/fearn-06-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center"}
-                [:span {:style "font-size:13px"} [:em "Brisidh I"]]
+                [:span {:style "font-size:12px"} [:em "Brisidh I"]]
                 [:span {:style "font-size:9px"} [:br] "141x121m" [:br] "2021" [:br] "1/1" [:br] "€95 + P&P"]]]
               [:figure {:class "hormarginstight" :style "width:10%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/fearn-07-1000x1000.jpg"}
                 [:img {:class "hormarginstight" :src "../img/art/luthchleasa/fearn-07-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center"}
-                [:span {:style "font-size:13px"} [:em "Brisidh II"]]
+                [:span {:style "font-size:12px"} [:em "Brisidh II"]]
                 [:span {:style "font-size:9px"} [:br] "141x121mm" [:br] "2021" [:br] "1/1" [:br] "€95 + P&P"]]]
 
               [:br]
@@ -260,25 +238,25 @@
                [:a {:href "../img/art/luthchleasa/fearn-09-1000x1000.jpg"}
                 [:img {:class "hormarginstight" :src "../img/art/luthchleasa/fearn-09-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center"}
-                [:span {:style "font-size:13px"} [:em "Leagadh anuas IV"]]
+                [:span {:style "font-size:12px"} [:em "Leagadh anuas IV"]]
                 [:span {:style "font-size:9px"} [:br] "141x121mm" [:br] "2021" [:br] "1/1" [:br] "€95 + P&P"]]]
               [:figure {:class "hormarginstight" :style "width:10%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/fearn-10-1000x1000.jpg"}
                 [:img {:class "hormarginstight" :src "../img/art/luthchleasa/fearn-10-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center"}
-                [:span {:style "font-size:13px"} [:em "Brisidh III"]]
+                [:span {:style "font-size:12px"} [:em "Brisidh III"]]
                 [:span {:style "font-size:9px"} [:br] "141x121mm" [:br] "2021" [:br] "1/1" [:br] "€95 + P&P"]]]
               [:figure {:class "hormarginstight" :style "width:10%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/fearn-11-1000x1000.jpg"}
                 [:img {:class "hormarginstight" :src "../img/art/luthchleasa/fearn-11-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center"}
-                [:span {:style "font-size:13px"} [:em "Brisidh IV"]]
+                [:span {:style "font-size:12px"} [:em "Brisidh IV"]]
                 [:span {:style "font-size:9px"} [:br] "141x121mm" [:br] "2021" [:br] "1/1" [:br] "€95 + P&P"]]]
               [:figure {:class "hormarginstight" :style "width:10%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/fearn-12-1000x1000.jpg"}
                 [:img {:class "hormarginstight" :src "../img/art/luthchleasa/fearn-12-thumbnail-framed.png" :width "100%"}]]
                [:figcaption {:style "text-align:center"}
-                [:span {:style "font-size:13px"} [:em "Leath leagadh III"]]
+                [:span {:style "font-size:12px"} [:em "Leath leagadh III"]]
                 [:span {:style "font-size:9px"} [:br] "141x121mm" [:br] "2021" [:br] "1/1" [:br] "€95 + P&P"]]]
               [:figure {:class "hormarginstight" :style "width:10%;display:inline-block;"}
                [:a {:href "../img/art/luthchleasa/fearn-13-1000x1000.jpg"}
