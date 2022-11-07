@@ -16,21 +16,30 @@
             [:div {:class "column"}
              [:div {:class "content"}
 
-              [:div {:class "form-container"}
-               [:form {:class "contact-form"}
-                [:h2 "Contact"]
-                [:input {:type "text" :id "name" :placeholder "Full name"}]
-                [:br]
-                [:input {:type "email" :id "email" :placeholder "Email"}]
-                [:br]
-                [:input {:type "text" :id "subject" :placeholder "Subject"}]
-                [:br]
-                [:textarea {:id "message" :placeholder "message" :cols "30" :rows "10"}]
-                [:br]
-                [:input {:type "submit" :class "submit" :value "Send Message"}]]]
 
+              (comment
+                [:div {:class "form-container"}
+                 [:form {:class "contact-form"}
+                  [:h2 "Contact"]
+                  [:input {:type "text" :id "name" :placeholder "Full name"}]
+                  [:br]
+                  [:input {:type "email" :id "email" :placeholder "Email"}]
+                  [:br]
+                  [:input {:type "text" :id "subject" :placeholder "Subject"}]
+                  [:br]
+                  [:textarea {:id "message" :placeholder "message" :cols "30" :rows "10"}]
+                  [:br]
+                  [:input {:type "submit" :class "submit" :value "Send Message"}]]])
+
+              [:p "Email: micheal [at] michealocathain.com"]
+              [:br]
               [:p "Connect via social media:"]
               [:p {}
                [:a {:href "https://www.instagram.com/simplyonmyway/"} [:img {:class "alignnone ", :src "../img/instagram-icon.png", :width "5%"}]]
-               [:a {:href "https://www.facebook.com/michealocathainharpvoice"} [:img {:class "alignnone ", :src "../img/facebook-icon.png", :width "5.5%"}]]]]]]]]]))
+               [:a {:href "https://www.facebook.com/michealocathainharpvoice"} [:img {:class "alignnone ", :src "../img/facebook-icon.png", :width "5.5%"}]]]
+
+              [:br]
+              [:p
+               [:a {:href "https://linktr.ee/simplyonmyway"} "Linktree"]]
+              ]]]]]]))
 

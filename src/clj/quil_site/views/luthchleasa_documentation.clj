@@ -101,12 +101,14 @@
               [:a {:href "../img/art/luthchleasa_documentation/luis-1-standard-c.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-1-standard-c-1000x1000.jpg", :width "20%"}]]
               [:a {:href "../img/art/luthchleasa_documentation/luis-1-left.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-1-left-1000x1000.jpg", :width "20%"}]]
               [:a {:href "../img/art/luthchleasa_documentation/luis-1-tl.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-1-tl-1000x1000.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luis-1-framed-me-1.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-1-framed-me-1-1000x1000.jpg", :width "18.5%"}]]
               [:br]
               [:br]
               [:br]                            
               [:a {:href "../img/art/luthchleasa_documentation/luis-2-left.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-2-left-1000x1000.jpg", :width "20%"}]]
               [:a {:href "../img/art/luthchleasa_documentation/luis-2-standard-b.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-2-standard-b-1000x1000.jpg", :width "20%"}]]
               [:a {:href "../img/art/luthchleasa_documentation/luis-2-br.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-2-br-1000x1000.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luis-2-framed-me-1.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-2-framed-me-1-1000x1000.jpg", :width "18%"}]]
 
               [:br]
               [:br]
@@ -115,6 +117,7 @@
               [:a {:href "../img/art/luthchleasa_documentation/luis-5-br.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-5-tr-1000x1000.jpg", :width "20%"}]]
               [:a {:href "../img/art/luthchleasa_documentation/luis-5-left.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-5-left-1000x1000.jpg", :width "20%"}]]
               [:a {:href "../img/art/luthchleasa_documentation/luis-5-standard-f.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-5-standard-f-1000x1000.jpg", :width "20%"}]]
+              [:a {:href "../img/art/luthchleasa_documentation/luis-5-framed-me-1.jpg"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/luis-5-framed-me-1-1000x1000.jpg", :width "17%"}]]              
 
               [:br]
               [:br]
