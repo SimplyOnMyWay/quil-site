@@ -22,6 +22,7 @@
             [quil-site.views.luthchleasa-documentation :refer [luthchleasa-documentation-page]]
             [quil-site.views.ab :refer [ab-page]]
             [quil-site.views.ab-as :refer [ab-as-page]]
+            [quil-site.views.artblocks-juxt :refer [artblocks-juxt-page]]
             [quil-site.views.essays :refer [essays-page]]
             [quil-site.views.essay-why-I-make-lfgav-art :refer [essay-why-I-make-lfgav-art-page]]
             [quil-site.views.essay-why-I-combine-IRL-and-digital-voice-and-harp-av :refer [essay-why-I-combine-IRL-and-digital-voice-and-harp-av-page]]
@@ -47,6 +48,7 @@
   (GET "/luthchleasa-documentation" [] (luthchleasa-documentation-page))
   (GET "/ab" [] (ab-page))
   (GET "/ab/artist-statement" [] (ab-as-page))
+  (GET "/artblocks-juxt" [] (artblocks-juxt-page))  
   (GET "/essays" [] (essays-page))
   (GET "/essay-why-I-make-lfgav-art" [] (essay-why-I-make-lfgav-art-page))
   (GET "/essay-why-I-combine-IRL-and-digital" [] (essay-why-I-combine-IRL-and-digital-voice-and-harp-av-page))
