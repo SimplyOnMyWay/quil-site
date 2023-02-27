@@ -66,10 +66,11 @@
 
               [:br]
 
-              [:p {} "This prototype is still in development.  Next step is to confirm that the use of a separate audio worklet javascript file to the main script is legitimate for Art Blocks.  The fidelity of the audio, to sound closer to the acoustic harp it models also requires focus. Exploration of parameter spaces, both from a music composition and visual perspective, has only commenced. Clearly work has yet to start in earnest on colour palettes also.  My hope is that, subject to confirmation of the separate audio worklet file being legitimate, the prototype will evolve relatively quickly to readiness for the curation board."]
+              [:p {} "Please note this prototype is still in development.  The next step is to focus on the fidelity of the audio, to sound closer to the acoustic harp it models. Exploration of parameter spaces, both from a music composition and visual perspective, has only recently commenced. Work has yet to start in earnest on colour palettes also.  However my hope is that, given all \"scaffolding\" is now in place, the prototype will evolve relatively quickly to readiness for review by the curation board."]
               
               [:p {} [:strong {} " - Mícheál Ó Catháin ..."]]
-              ]
+              [:br]
+              [:br]]
 
              
              [:div {:class "column" :id "gen-art"}

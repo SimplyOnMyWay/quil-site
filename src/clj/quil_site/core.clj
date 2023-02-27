@@ -15,7 +15,7 @@
             [quil-site.views.ann-heymann-2 :refer [ann-heymann-2-page]]
             [quil-site.views.paul-dooley :refer [paul-dooley-page]]
             [quil-site.views.javier-sainz :refer [javier-sainz-page]]
-            [quil-site.views.simon-chadwick :refer [simon-chadwick-page]]
+ ;           [quil-site.views.simon-chadwick :refer [simon-chadwick-page]]
             [quil-site.views.siobhan-armstrong :refer [siobhan-armstrong-page]]
             [quil-site.views.projects :refer [projects-page]]
             [quil-site.views.luthchleasa :refer [luthchleasa-page]]
@@ -23,6 +23,7 @@
             [quil-site.views.ab :refer [ab-page]]
             [quil-site.views.ab-as :refer [ab-as-page]]
             [quil-site.views.artblocks-juxt :refer [artblocks-juxt-page]]
+            [quil-site.views.photobook :refer [photobook-page]]            
             [quil-site.views.essays :refer [essays-page]]
             [quil-site.views.essay-why-I-make-lfgav-art :refer [essay-why-I-make-lfgav-art-page]]
             [quil-site.views.essay-why-I-combine-IRL-and-digital-voice-and-harp-av :refer [essay-why-I-combine-IRL-and-digital-voice-and-harp-av-page]]
@@ -41,14 +42,15 @@
   (GET "/interviews/ann-heymann-2" [] (ann-heymann-2-page))
   (GET "/interviews/paul-dooley" [] (paul-dooley-page))
   (GET "/interviews/javier-sainz" [] (javier-sainz-page))
-  (GET "/interviews/simon-chadwick" [] (simon-chadwick-page))
+;  (GET "/interviews/simon-chadwick" [] (simon-chadwick-page))
   (GET "/interviews/siobhan-armstrong" [] (siobhan-armstrong-page))
   (GET "/projects" [] (projects-page))
   (GET "/luthchleasa" [] (luthchleasa-page))
   (GET "/luthchleasa-documentation" [] (luthchleasa-documentation-page))
   (GET "/ab" [] (ab-page))
   (GET "/ab/artist-statement" [] (ab-as-page))
-  (GET "/artblocks-juxt" [] (artblocks-juxt-page))  
+  (GET "/artblocks-juxt" [] (artblocks-juxt-page))
+  (GET "/photobook" [] (photobook-page))    
   (GET "/essays" [] (essays-page))
   (GET "/essay-why-I-make-lfgav-art" [] (essay-why-I-make-lfgav-art-page))
   (GET "/essay-why-I-combine-IRL-and-digital" [] (essay-why-I-combine-IRL-and-digital-voice-and-harp-av-page))

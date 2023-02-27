@@ -56,15 +56,17 @@
               [:h3 "Working Prototype"]
               [:p {} "This evolving work in progress consists:"]
               [:ul {}
-               [:li {} "" [:a {:href "#gen-art"} "rendered artwork."] " Click or scroll down, and reload page to generate a fresh iteration! Click the button for generative audio!!"]
-               [:li {} "clojurescript code. " "I normally make generative art in clojurescript.  I love this language and how well suited it is for generative art."]
+               [:li {} "" [:a {:href "#gen-art"} "Rendered artwork."] " Click or scroll down, and reload page to generate a fresh iteration! Click the button for generative audio!!"]
+               [:li {} "Clojurescript code. " "I normally make generative art in clojurescript.  I love this language and how well suited it is for generative art."]
                [:li {} "Main script, with visuals using p5.js library, and generative audio in vanilla javascript. " "For Art Blocks I port from clojurescript to minified javascript."]]
 
               [:br]
 
-              [:p {} "This prototype is still in development.  Next step is to confirm that the use of a separate audio worklet javascript file to the main script is legitimate for Art Blocks.  The fidelity of the audio, to sound closer to the acoustic harp it models also requires focus. Exploration of parameter spaces, both from a music composition and visual perspective, has only commenced. Clearly work has yet to start in earnest on colour palettes also.  My hope is that, subject to confirmation of the separate audio worklet file being legitimate, the prototype will evolve relatively quickly to readiness for the curation board."]
+              [:p {} "Please note this prototype is still in development.  The next step is to focus on the fidelity of the audio, to sound closer to the acoustic harp it models. Exploration of parameter spaces, both from a music composition and visual perspective, has only recently commenced. Work has yet to start in earnest on colour palettes also.  However my hope is that, given all \"scaffolding\" is now in place, the prototype will evolve relatively quickly to readiness for review by the curation board."]
               
-              [:p {} [:strong {} " - Mícheál Ó Catháin ..."]]
+              [:p {} [:strong {} " - Mícheál Ó Catháin"]]
+              [:br]
+              [:br]
               ]
 
              
