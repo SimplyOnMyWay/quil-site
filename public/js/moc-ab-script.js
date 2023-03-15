@@ -1700,6 +1700,10 @@ let juxtSketch = function(p){
   // !!!!! P5JS DRAW() !!!!!
   p.draw = function() {
 
+
+    // temp
+    //window.stringAmplitudes
+    
     if(guiMode){
       p.updateJuxtParametersGuiMode();
       p.genMainMap();
@@ -2057,7 +2061,7 @@ sketch.audioStart = async function() {
 
   let SR = audioContext.sampleRate;
   let adsr_ = [20,5]; // ad for now!
-  let adsrGain = 0.01; //window.adsrGain; //p.guiParams["adsrGain"]; // 0.2
+  let adsrGain = 0.11; //window.adsrGain; //p.guiParams["adsrGain"]; // 0.2
   let ia = Math.round(adsr_[0]/1000*SR);
   let id = Math.round(adsr_[1]/1000*SR);
   let adsrSampleLength = ia+id; // envelope length in samples

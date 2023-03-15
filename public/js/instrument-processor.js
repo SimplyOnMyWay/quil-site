@@ -307,6 +307,7 @@ sounds.ASRFE = function(attT60,susLvl,relT60,finLvl) {
 
 }
 sounds.ASRFE.prototype.computeSample = function(gate) {
+  let y;
   this.ugate = (gate == 0);
   if (this.ugate == true){
     this.target = this.finLvl_;
@@ -317,9 +318,9 @@ sounds.ASRFE.prototype.computeSample = function(gate) {
     this.t60 = this.attT60_;
   }
   this.pole = sounds.tau2pole(this.t60/6.91);
-  return sounds.smooth(this.pole,this.target);
+  [y] = sounds.smooth(this.pole,[this.target]); //note 2nd arg put within array so that length method available as needed in sounds.smooth ... optimise later!
+  return y;
 }
-
 
 
 /**
@@ -491,8 +492,8 @@ sounds.InstrumentProcessor.prototype.createString = function(f0){
   // ~~~~~~~~
 
   // create array placeholders
-  this.AREenv.push([]);
   this.excitation.push([]);
+  this.AREenv.push(new sounds.ASRFE(0.005,1.0,0.17,0.0)); // assoicate static ARE envelope with each string ... optimise later to vary 
 
   
 }
@@ -506,13 +507,13 @@ sounds.InstrumentProcessor.prototype.createString = function(f0){
  * @param {number} s string number
  */
 sounds.InstrumentProcessor.prototype.generateExcitation = function(s){
-  let a = this.adsr[s][0]//50; //attack time in ms
-  let d = this.adsr[s][1];//25; //decay time in ms
-  let ia = Math.round(sampleRate*a/1000);
-  let id = Math.round(sampleRate*d/1000);
-  let aSlope = 1/ia;
-  let dSlope = -1/id;
-  let excitationLength = ia+id;
+  // let a = this.adsr[s][0]//50; //attack time in ms
+  // let d = this.adsr[s][1];//25; //decay time in ms
+  // let ia = Math.round(sampleRate*a/1000);
+  // let id = Math.round(sampleRate*d/1000);
+  // let aSlope = 1/ia;
+  // let dSlope = -1/id;
+  // let excitationLength = ia+id;
 
   //this.envelope[s] = [];
   // for (let i=0; i < ia; i++){
@@ -521,17 +522,25 @@ sounds.InstrumentProcessor.prototype.generateExcitation = function(s){
   // for (let i = 0; i < id; i++){
   //   this.AREenv[s][ia + i] = 1 + dSlope * i;
   // };
-  this.AREenv[s] = new sounds.ASRFE(0.005,1.0,0.17,0.0);
+  // this.AREenv[s] = new sounds.ASRFE(0.005,1.0,0.17,0.0);  // move up to createString so called as part of constructor
+
+  let excitationLength = (0.005 + 0.17)*sampleRate;// temp, need to make this a method of sounds.ASRFE
   let gate = [];
+  let noiseBurst_ = [];
 //  this.excitation[s] = [];
   for (let  i= 0; i < excitationLength; i++){
-    if (i < 0.005*sampleRate)
+    if (i < 0.005*sampleRate){
       gate[i] = 1.0;
-    else
+    }
+    else{
       gate[i] = 0.0;
-    const noiseBurst_ = this.adsrGain[s] * this.noise[s][i] * this.AREenv[s].computeSample(gate[i]);
-    this.excitation[s][i] = this.bodyMode3.computeSample(this.bodyMode2.computeSample(this.bodyMode1.computeSample(this.noiseBurstFR.computeSample(noiseBurst_))));
+    }
+    noiseBurst_[i] = this.AREenv[s].computeSample(gate[i])*this.adsrGain[s];
+//    noiseBurst_[i] = this.adsrGain[s] * this.noise[s][i] * this.AREenv[s].computeSample(gate[i]);
+    this.excitation[s][i] = noiseBurst_[i]; //this.bodyMode3.computeSample(this.bodyMode2.computeSample(this.bodyMode1.computeSample(this.noiseBurstFR.computeSample(noiseBurst_))));
   };
+  console.log("gate[i] = ",  gate);
+  console.log("noiseBurst_ = ", noiseBurst_);
 }
 
 sounds.InstrumentProcessor.prototype.handleMessage = function(event){
@@ -542,6 +551,7 @@ sounds.InstrumentProcessor.prototype.handleMessage = function(event){
     this.adsrGain[event.data["stringnum"]] = event.data["adsrGain"];
     this.generateExcitation(event.data["stringnum"]); // only needed once I'd have thought, unless I change the excitation, which is a great idea! but ensure computational load is OK!
 //    this.excitationReadIndices[event.data["stringnum"]] = 0; CORRECT TO COMMENT OUT, OR IS FIRST ONE REDUNDANT?
+    console.log("Coming from the procesor! this.adsrGain = ", this.adsrGain);
   }
 }
 
