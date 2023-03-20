@@ -20,8 +20,6 @@
 
              [:h2 {} [:strong {} "Content for Mícheál Ó Catháin page in Photobook on Irish Digital Art"]]
 
-
-
              [:div {:class "column" :id "ph"}
               [:h3 {} [:strong {} "Photos"]]
               [:br]                                          
@@ -113,7 +111,7 @@ Micheal would like the viewer to approach the work with awareness of their point
 
 
               ;; A 500-1000 word reflection on your artistic practice, in the context of the artworks which have been selected for the book.
-              ;; 0
+              ;; wordcount...
 
 
               [:p {} "
