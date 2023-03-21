@@ -16,6 +16,9 @@
 - Mícheál applied a rule-based colour palette, based on a gradient of reds to yellow-greens in \"north to south\" direction, with a gradient of blue-greens to violets in the \"west to east\" direction.
 
 - Micheal would like the viewer to approach the work with awareness of their point of view.  He encourages such awareness through his choiceof displaying the pieces in the horizonal (reminiscent to how museum pieces are displayed, e.g., the Book of Kells) rather than the more traditional choice of vertical wall mounting.  By bringing the viewer physically closer to the artwork, Micheal also encourages a sense of curiosity and accessibilty about the harp music represented.
+
+- The noteheads escaping from the staves represents the release of the notes from the "straigh-jacket" / limitations of European music notation. It also represents Indian singer Pandit Pran Nath's idea that "music happens between the notes", an idea I hold to be true of early Gaelic harp music and singing.
+  
 :END:
 :LOGBOOK:
 - Note taken on [2023-03-17 Fri 10:59] \\
@@ -33,23 +36,41 @@
 - Interpreting the Bunting manuscripts for a contemporary audience, Mícheál employs computer code as a collaborative partner to represent these patterns in visual form and expresses in this generative art his emotional response to the music. Lúthchleasa [lu:hxlˈæsə] illuminates ancient music and celebrates the beauty and colour spaces inhabited by early Irish art, reimagining for today the full spectrum of expression felt and heard by harpers and listeners alike centuries ago.
 :END:
 :LOGBOOK:
+- Note taken on [2023-03-20 Mon 18:21] \\
+  ;;; In recent years...Micheal has integrated digital art skills with his [existing] strong background in harp/voice performance
+  ;;; As a multimedia artist, Micheal curates beautiful and unique audiovisual experiences for audiences across three interweaving and artistically fertile strands:
+  ;;; Historical: historically viable performance of ancient harp pieces from archival manuscripts and collections
+  ;;; Traditional: arrangement and performance of historical repertoire, returning these pieces faithfully into the common repertoire
+  ;;; Contemporary: performance of improvised music, with associated generative artwork and digital sound art, bringing the early Irish harp;;; into a wider context (than purely historical or traditional) for contemporary audiences
+  ;;; *ambitious*
+  ;;; Micheal develops and programs algorithms (computer code) representing rules [within which unique visual art pieces are generated]
+  ;;; generative visual art reacts in real time to sampled or generated harp audio...
+  ;;; carefully incorporating randomness so that audiovisual experience is ever-evolving and unique
+  ;;; high quality digital archival prints, working with fine-art printers (and framers)
+  ;;; situating his digital art in the arc of art-history ... contemplating the place of generative coded art in the wider arc of art-history...
+  ;;; using computer code as a medium for padding out the full spectrum of viable possibilities suggested by the sparse archive of harp music
+  ;;; engaging with the digital archive using digital tools
+  ;;; engaging with the affordances emerging digital software and hardware... (ref essay), to create immersive audiovisual installation experiences for audiences
+  ;;; During a 2017 Traditional Arts Bursary Micheal began painting his emotional response to music encoded in the Bunting harp manuscripts. A 2020 Kildare Council [Local Authority Arts] Grant saw Micheal combining this physical artwork with creative coding, drawing on his engineering background, towards and exhibition and concert at Naas Arts & Culture Centre.  ...expand this to Galway Arts Centre...
+  ;;; Micheal is an emerging multimedia artist working with live harp & voice performance and audiovisual exhibitions.
+  ;;; Micheal has performed as a singer and fiddle player for decades, a foundation upon which he has established a deep practice since 2011 with the early Irish harp.  [Mention time split / parallel careers?]
 - Note taken on [2023-03-17 Fri 11:11] \\
   250 words or so, still short.  Can customise and elaborate generously, using my what,how,why prompts and fill in the blanks, and also original bio I provided GAC.
 :END:
 
 * A 500-1000 word reflection on your artistic practice, in the context of the artworks which have been selected for the book. :REV1:RED:
 :REFLECTION:
-- I am investigating my own intuitive approach to re-animating ancient Irish harping finger-nail techniques. I collectively refer to these techniques as lúthchleasa (an Irish language word which may be translated as athletics).  The artwork provides me a framework on which to record my interpretation of these lúthchleasa. The visual medium of generative art serves to represent visually attributes of my physical playing of these techniques on my harp, and the sounds which result.
+- In my Lúthchleasa [] collection, of which the Fearn series is a part, I investigate my own intuitive approach to re-animating ancient Irish harping finger-nail techniques. I collectively refer to these techniques as lúthchleasa (an Irish language word which may be translated as athletics).  The artwork provides me a framework on which to record my interpretation of these lúthchleasa. The visual medium of generative art serves to represent visually attributes of my physical playing of these techniques on my harp, and the sounds which result.
 
-- I am communicating my range of responses to the lúthchleasa, representing these responses in visual form to share the emotional, musical, linguistic and physical attributes I associate with each of these lúthchleasa.
+- I am communicating my range of responses to the lúthchleasa, representing these responses in visual form to share the emotional, musical(harmonic and rhythmical), linguistic and physical attributes I associate with each of these lúthchleasa.
 
-- Lúthchleasa / Fearn tells the story of my engagement with these fingernail techniques, as I deepen my understanding of these techniques and the musical ideas they represent.  The nature of generative art is that it is iterative, so I expect to build my story into future versions of the code, and the art work which emerges,  as my understanding and playing of these lúthchleasa techniques on my harp evolves.
+- Lúthchleasa / Fearn tells the story of my engagement with these fingernail techniques, as I play with them physically and deepen my understanding of the musical ideas they represent.  The nature of generative art is that it is iterative, as is my own musical practice, so I expect to build [my story / the story of my evolving voice-led collaboration with my harp] into future versions of the code, and the art work which emerges. [as my understanding and playing of these lúthchleasa techniques on my harp evolves.]
 
-- My process involved coding an algorithm which generates variable outputs, each image unique and repeatable based on a digital signature which determines all randomness in the image. Think of this signature as a seed or DNA for all the variability of the image. From a set of circa 200 unique images generated by the algorithm, I curated 15 images for printing and display in the exhibition on two tables. 7 of these images are shown in the photograph.
+- My process involved coding an algorithm which generates variable outputs, each image unique and repeatable based on a digital signature which determines all randomness in the image. Think of this signature as a seed or DNA for all the variability of the specific image. From a set of circa 200 unique images generated by the algorithm, I curated 15 images for printing and display in the exhibition on two tables. 7 of these images are shown in the photograph.
 
-- The Fearn series of generative artwork represents my emotional response to a specific family of harp techniques (a subset of the full set of lúthchleasa) named in the Bunting as leath leagadh, leagadh anuas, brisidh and crothach aon mhear. From my own experience of playing these techniques, I have grouped them together and assigned (as a memory aid) the ogham symbol Fearn to identify this grouping.
+- The Fearn series of generative artwork represents my emotional response to a specific family of harp techniques (a small selection drawn from the full set of lúthchleasa) named in the Bunting as leath leagadh, leagadh anuas, brisidh and crothach aon mhear. From my own experience of playing these techniques, I have grouped them together and assigned (as a memory aid) the ogham symbol Fearn to identify this grouping.
 
-- The noteheads escaping from the staves represents the release of the notes from the "straigh-jacket" / limitations of European music notation             
+- The noteheads escaping from the staves represents the release of the notes from the "straigh-jacket" / limitations of European music notation. It also represents Indian singer Pandit Pran Nath's idea that "music happens between the notes", an idea I hold to be true of early Gaelic harp music and singing.             
 
 - I am investigating my own intuitive approach to re-animating ancient Irish harping finger-nail techniques, which I collectively refer to as lúthchleasa.  The artwork provides me a framework on which to record my interpretation of these lúthchleasa, the visual medium of generative art serves to represent visually attributes which I map from my physical playing of these techniques on my harp and the sounds which results.
 
@@ -60,23 +81,23 @@
 
 - The richness of the early Irish harp and visual art traditions keeps me curious and dedicated, especially how to find contemporary and appropriate settings for expressing the ideas for which this instrument and the music it can make is uniquely suited.
 
-- The artwork involved mentorship (both musical with Ann Heymann and visual with Louise Manifold), skills in computer coding of visuals and audio in the browser, travel between Dublin (where I lived at the time) and Galway Arts Centre for site visits and well as production of the exhibition, technology in multiple forms - print, photo, video, computer hardware, remote monitoring of audio visual installation, electronic effects during live performance. 
+- The artwork involved mentorship (both musical with Ann Heymann and visual with Louise Manifold), developing skills in computer coding of visuals and audio in the browser, travel to Galway Arts Centre for site visits and well as production of the exhibition, and technology in multiple forms - print, photo, video, computer hardware, remote monitoring of audio visual installation, electronic effects during live performance. 
 
 # how prompts...
 - I physically engaged in the creation of the work by playing the lúthchleasa on my harp and absorbing their musicality.  Then I sat and wrote code using a computer keyboard, and viewing the results on a computer screen. I visited the gallery space and through discussions with the gallery team as well as mentorship, decided that displaying the images horizontally rather than the traditional vertical mounting was appropriate, both for the pieces and for architecture of the room.
 
-- I am uniquely presenting the subject by presenting the pieces horizontally, and by abstracting the notes and staves in the Bunting manuscripts, playing with their structure and introducing colour.
+- I am uniquely presenting the subject by presenting the physical prints horizontally, and by abstracting the notes and staves in the Bunting manuscripts, playing with their structure and introducing colour.
 
 - Through experimentation (and happy accidents!) I discovered that carefully introducing randomness into the underlying grid gave a softer more organic feel to the overall composition
   
-- I chose the browser as my primary medium by researching a broad range of computer languages over the course of the pandemic.  It became apparent to me how much of human time and attention globally is spent within this browser environment. I also realised how powerful a multimedia medium the browser is already, with additional features being added by browser designers on a daily basis.  A big ah-ha moment was when I demonstrated to myself that I could render to high-resolution and print the art I made in and for the browser, so that I could access the best of both worlds - the reach and facility of the browser with the warmth, texture and visual fidelity of a fine-art print.
+- I chose the browser as my primary medium by researching a broad range of computer languages over the course of the pandemic (2020 & 2021).  It became apparent to me how much of human time and attention globally is spent within this browser environment. I also realised how powerful a multimedia medium the browser is already, with additional features being added by browser designers on a daily basis.  A big ah-ha moment was when I demonstrated to myself that I could render to high-resolution and print the art I made in and for the browser, so that I could access the best of both worlds - the reach and facility of the browser with the warmth, texture and visual fidelity of a fine-art print.
 
 - I would like the viewer to approach the work with awareness of their point of view, an awareness encouraged by the choice of the artist to display the pieces in the horizonal (reminiscent to how museum pieces are displayed) rather than the more traditional choice of vertical wall mounting. With a curiosity about how accessible we feel the music represented in the art to be
 
   
 # why prompts...
 
-- I made this work to map out visually the idea of luthchleasanna, giving each technique their territory visually, sufficient to explore long term as my understanding of their emotional content evolves.
+- I made this work to map out visually the idea of luthchleasanna, giving each technique their own visual soundscape so to speak, an audiovisual space to hold my current and longer term explorations of the lúthchleasanna as my understanding of their emotional content evolves.
 
 - I believe that predictable, repeatable human emotional response is hard-coded into the techniques
 
@@ -101,7 +122,7 @@
 
 # fill in the gaps
 
-- I work in generative art, installation and performance because it allows me to engage with diverse contemporary audiences to reanimate the richness of ideas represented in early Irish harp music, song and art.
+- I work in generative art, installation and performance because it allows me to engage with diverse contemporary audiences while I work to faithfully evolve the richness of ideas represented in early Irish harp music, song and art.
               
 - I engage the emotions of the viewer in order to make heart-felt connections with my subject matter, the resonant nature of both singing and harp music.
 
@@ -140,4 +161,183 @@
 
 :END:
 :LOGBOOK:
+- Note taken on [2023-03-20 Mon 12:14] \\
+  I wish to remain sufficiently general so that I avoid hemming in my artistic freedom, while still expressing the why and worthiness of my harp-specific work so that audiences / viewers will take a closer look at my work (both specifically and overall).
+:END:
+* A 500-1000 word reflection on your artistic practice, in the context of the artworks which have been selected for the book. :REV1:AMBER:
+:REFLECTION:
+
+- 1. Singing is at the centre of my art
+
+- I make connections between singing and technology - ancient techology like the early Gaelic harp and emerging technology like web3 / blockchain.
+
+- I engage the emotions of the viewer in order to make heart-felt connections with my subject matter, the resonant nature of both singing and harp music.
+
+- I am drawn to the subject of musical resonance because it is a universal human experience which finds regional and personal expression.
+
+- I want my viewers to have a visceral, heart-felt response to my work; only afterwards realising it was created using computer code.
+
+- To me this (show) represents a mindfully curated attention echo-chamber, appropriating the latest emerging technology to amplify for myself and for the viewer - even for a short while - the ideas of resonance as represented in early Gaelic harp music and art.
+  
+- I believe my work presented in [the Luthchleas collection] is worthwhile because of my conviction [I am convinced] that these particular Gaelic expressions of resonance are ancient forms of soul nourishment which remain relevant today. 
+
+- Lúthchleasa / Fearn tells the story of my engagement with these fingernail techniques, as I play with them physically and deepen my understanding of the musical ideas they represent.  The nature of generative art is that it is iterative, as is my own musical practice, so I expect to build [my story / the story of my evolving voice-led collaboration with my harp] into future versions of the code, and the art work which emerges. [as my understanding and playing of these lúthchleasa techniques on my harp evolves.]
+
+- The Fearn series of generative artwork represents my emotional response to a specific family of harp techniques (a small selection drawn from the full set of lúthchleasa) named in the Bunting as leath leagadh, leagadh anuas, brisidh and crothach aon mhear. From my own experience of playing these techniques, I have grouped them together and assigned (as a memory aid) the ogham symbol Fearn to identify this grouping.
+              
+- My process involved coding an algorithm which generates variable outputs, each image unique and repeatable based on a digital signature which determines all randomness in the image. Think of this signature as a seed or DNA for all the variability of the specific image. From a set of circa 200 unique images generated by the algorithm, I curated 15 images for printing and display in the exhibition on two tables. 7 of these images are shown in the photograph.  [Lead into long form...]
+
+- I created the Lúthchleasa exhibition to express my emotional response to the music encoded in the Bunting manuscripts [collection].
+
+- I am communicating my range of responses to the lúthchleasa, representing these responses in visual form to share the emotional, musical(harmonic and rhythmical), linguistic and physical attributes I associate with each of these lúthchleasa.
+
+- The emotion which were primary while I made this artwork was calm.   Certainly over the 6 months or so it took to make the work there were times of anxiety and frustration, but on the whole I experienced a sense of calm while methodically creating and combining the functional building blocks of code which represented the visual ideas I wanted to make.  A few times I even experienced surprise and wonder, especially when I introdcued randomness into grid of Fearn... carthesis (sail), - The emotions I experience when playing lúthchleasa are... awe, gratitude, excitement, satisfaction, joy, relief, amusement, soothed, buzzing/alert, focussed, proud, - Emotion comes through the work through colour, the juxtiposition of hard lines and relaxed structure, notes "flying" away, released from strait jacket.
+
+- I am investigating my own intuitive approach to re-animating ancient Irish harping finger-nail techniques, which I collectively refer to as lúthchleasa.  The artwork provides me a framework on which to record my interpretation of these lúthchleasa, the visual medium of generative art serves to represent visually attributes which I map from my physical playing of these techniques on my harp and the sounds which results.
+
+- I believe that predictable, repeatable human emotional response is hard-coded into the techniques - I believe that these responses can be mapped visually, individually and overlapping - Viewers can see this belief coming through in the artwork in my Lúthchleasa collection in several places. This belief takes form in the primative geometric shapes, random distributions of same, and in the combination of attributes (colour, structure,) resulting in emergent complexity. This belief also comes through in how I am linking music and visuals, both in exhibition/installation, and also in live performance. My questioning of conventional interpretations of the music represented in the Bunting manuscripts is expressed in the curation of the Fearn series in GAC, where I chose not to mount the pieces on the wall but rather flat on a display table.
+
+- Learning about art history I found abstract expression (check art history term) fitted well with my approach of representing ideas as abstract colourful forms (Hilma Af Klint, Wassily Kandinsky).  Abstract also seemed to me a good way to consider the early Gaelic art - that these forms and symbols do indeed represent ideas (archetypal forms in nature, breath and speech..).  This way of considering early Gaelic art, and other so-called "primative" art globally, is inspired by my reading of Sensitive Chaos by ...  Taking an abstract approach also fitted with my intuition to relax constraints of directly linking visuals to music, as this allowed the unknown / gaps in the Bunting music to fill themselves in - also this honoured my own intuition from being imbibed in traditional singing and dance music.
+
+- I made this work to map out visually the idea of luthchleasanna, giving each technique their own visual soundscape so to speak, an audiovisual space to hold my current and longer term explorations of the lúthchleasanna as my understanding of their emotional content evolves.
+
+- In my Lúthchleasa [] collection, of which the Fearn series is a part, I investigate my own intuitive approach to re-animating ancient Irish harping finger-nail techniques. I collectively refer to these techniques as lúthchleasa (an Irish language word which may be translated as athletics).  The artwork provides me a framework on which to record my interpretation of these lúthchleasa. The visual medium of generative art serves to represent visually attributes of my physical playing of these techniques on my harp, and the sounds which result.
+
+- I make work using digital prints, installation and live solo performance because it allows me to engage with diverse contemporary audiences while I work to [faithfully and] playfully evolve the richness of ideas represented in early Irish harp music, song and art.
+
+- I am investigating my belief that there is a link between the ideas expressed visually and sonically in early Irish music and art.  I belive theses ideas are rule-based, geometric, with variability / deviations from the rules expressible with randomness.  I also believe that music collected by Bunting represents datapoints in a broad dynamic spectrum, not static unchanging relics.  I believe that this spectrum can be reconstructed, using digital art forms and ideas of geometry and randomness.
+
+- I was thinking about whether the visual art (which includes Celic knot-work, overlaid lozenges, and circular motifs) on the Trinity harp express the same ideas as those represented by the music the harp was designed for, and I created the Lúthchleasa exhibition which explores this thought with abstract forms and sound samples.
+  
+- During the process I thinking about paths in the Celtic knotwork decorations on my harp, as well as the staves and notes layered on the pages of the Bunting manuscripts. I thought about how I might reverse engineer the layers, a sort of archaelogy of the layers from the compound image.  I also thought about affordances of the browser - linking sounds and visuals             
+- 2. My work is a combination of play and cultural inheritance. 
+              
+- I don't gravitate towards academic study of early Irish harp music, instead I take an experimental approach, curating experiences of resonance using my own voice and body in collaboration with my harp, and a range of multimedia technologies. (affordances)
+    
+- Several things inspired this direction.  During my Agility bursary I had with two mentors, Louise Manifold ... and Ann Heymann ... The conversations I had with Louise and Ann inspired the direction.  Earlier in 2017, during an Arts Council Bursary, I began painting.  When I discovered p5.js tutorial of Dan Shiffman in 2019 during the pandemic, I had the realisation that my background in coding was worthwhile for me to begin drawing upon, as I do not have a strong background in traditional art.  I heard from several sources that bringing the main parts of your life into your art is a really good strategy (..read in a great book called Art and Fear by ...), and this resonated with me to begin use computer code to represent using generative art the ideas I have been developing about the harp and singing and their relation to early Gaelic visual art.  ... Frustration of not relating to accepted wisdom of historically informed practice, 
+
+- I discovered that my approach needed to be iterative and experimental- I discovered that my approach needed to be of the hand-curated variety rather than of the long form variety, given (both) the higher artisic and technical challenges of the latter.
+
+- I created the Fearn series to express my visual mapping of musical attributes associated with four specific fingernail techniques (Lúthchleasa) recorded by Bunting from the last of the early Irish harpers in the 1790s.
+  
+- The 121x142mm dimensions of each piece in the Fearn series matches the dimensions of Edward Bunting's field notebook, while the paper chosen () is mindful of the laid-paper technology which had recently emerged at the time Bunting collected this harp music. 
+
+- In the process of creating this work, I also gained the experience of successfully delivering an ambitious multimedia exhibtion.
+
+- [In the process of creating this work,] some ideas crystalised as I hoped while others proved too technically challenging in the timescales available and so formed the seeds for future work.
+
+- I find inspiration in sharing my work in progress with like-minded artists; this type of sharing is the M.O. of many generative artists who regularly share their work in progress, as do I, on a variety of social media 
+
+- To me the most important thing is singing.              
+
+- Breathing and resonance is at the centre of my art                            
+
+- # how prompts... I physically engaged in the creation of the work by playing the lúthchleasa on my harp and absorbing their musicality.  Then I sat and wrote code using a computer keyboard, and viewing the results on a computer screen. I visited the gallery space and through discussions with the gallery team as well as mentorship, decided that displaying the images horizontally rather than the traditional vertical mounting was appropriate, both for the pieces and for architecture of the room. - I am uniquely presenting the subject by presenting the physical prints horizontally, and by abstracting the notes and staves in the Bunting manuscripts, playing with their structure and introducing colour - Through experimentation (and happy accidents!) I discovered that carefully introducing randomness into the underlying grid gave a softer more organic feel to the overall composition - I chose the browser as my primary medium by researching a broad range of computer languages over the course of the pandemic (2020 & 2021).  It became apparent to me how much of human time and attention globally is spent within this browser environment. I also realised how powerful a multimedia medium the browser is already, with additional features being added by browser designers on a daily basis.  A big ah-ha moment was when I demonstrated to myself that I could render to high-resolution and print the art I made in and for the browser, so that I could access the best of both worlds - the reach and facility of the browser with the warmth, texture and visual fidelity of a fine-art print.- I would like the viewer to approach the work with awareness of their point of view, an awareness encouraged by the choice of the artist to display the pieces in the horizonal (reminiscent to how museum pieces are displayed) rather than the more traditional choice of vertical wall mounting. With a curiosity about how accessible we feel the music represented in the art to be
+
+- # what prompts... I am breaking apart / separating / categorising the families of techniques, and examining their attributes - I would encourage viewers to take a closer looks at the fine detail in the noteheads, and how the attributes of the techniques are mapped to the visuals of each piece in the Fearn series, as indicated by the names. - The richness of the early Irish harp and visual art traditions keeps me curious and dedicated, especially how to find contemporary and appropriate settings for expressing the ideas for which this instrument and the music it can make is uniquely suited. - The artwork involved mentorship (both musical with Ann Heymann and visual with Louise Manifold), developing skills in computer coding of visuals and audio in the browser, travel to Galway Arts Centre for site visits and well as production of the exhibition, and technology in multiple forms - print, photo, video, computer hardware, remote monitoring of audio visual installation, electronic effects during live performance. 
+
+:END:
+:LOGBOOK:
+- Note taken on [2023-03-21 Tue 07:46] \\
+  Readers are primarily interested in my visual art.  I am addressing them.  I want to speak honestly about my practice as it relates to the harp and live performance.  However my primary goal is to have readers look closer at my visual art and become collectors or curators.  It is OK for me to write an optional paragraph and possibly to obtain and propose photos from Nuns Island, but after I meet my primary goal with this writing.
+- Note taken on [2023-03-20 Mon 18:23] \\
+  ;; Structures:
+                ;;; storytelling - beginning, middle and end
+                ;;; medium / process / understanding of the work (with strong, attention grabbing, end sentence)
+                ;;; field notes (use words to create curiosity, share info and provoke closer examination of subject and form)
+                ;;;; para to describe where you are, or what exploiring (the general caption)
+                ;;;; notes re individual pieces (with attributes)
+                ;;; (always lead back to what viewers are seeing)
+- Note taken on [2023-03-20 Mon 12:14] \\
+  I wish to remain sufficiently general so that I avoid hemming in my artistic freedom, while still expressing the why and worthiness of my harp-specific work so that audiences / viewers will take a closer look at my work (both specifically and overall).
+:END:
+
+* A 500-1000 word reflection on your artistic practice, in the context of the artworks which have been selected for the book. :REV1:GREEN:
+:REFLECTION:
+
+- 1. Singing is at the centre of my art
+
+- I engage the emotions of the viewer in order to make heart-felt connections with my subject matter, the resonant nature of both singing and harp music.
+
+- I am drawn to the subject of musical resonance because it is a universal human experience which finds regional and personal expression.
+
+- I make connections between singing and technology - ancient techology like the early Gaelic harp and emerging technology like web3 / blockchain.
+
+- I want my viewers to have a visceral, heart-felt response to my work; only afterwards realising it was created using computer code.
+
+- To me this (show) represents a mindfully curated attention echo-chamber, appropriating the latest emerging technology to amplify for myself and for the viewer [- even for a short while -] the ideas of resonance as represented in early Gaelic harp music and art.
+  
+- I am investigating intuitive ways of  [embracing/approaching] [re-animating/learning/embodying] [ancient/early] [Gaelic/Irish] harping finger-nail techniques. I refer to these techniques collectively as lúthchleasa (an Irish language word which may be translated as athletics). [I cast the word in this context, mindful of Madeline Bauser's description of musicians as "athletes of the small muscles")]
+
+- I am convinced that these particular Gaelic [articulations / expressions] of resonance encode ancient forms of soul nourishment which remain relevant today.
+
+- The artwork provides me a framework within which to record my interpretation of these lúthchleasa. the visual medium of generative art serves to represent visually attributes which I map from my physical playing of these techniques on my harp and the sounds which results.
+
+- Lúthchleasa / Fearn tells the story of my engagement with these fingernail techniques, as I play with them physically and deepen my understanding of the musical ideas they represent.  The nature of generative art is that it is iterative, as is my own musical practice, so I expect to build [my story / the story of my evolving voice-led collaboration with my harp] into future versions of the code, and the art work which emerges. [as my understanding and playing of these lúthchleasa techniques on my harp evolves.]
+              
+- The Fearn series of generative artwork represents my emotional response to a specific family of harp techniques (a small selection drawn from the full set of lúthchleasa) named in the Bunting as leath leagadh, leagadh anuas, brisidh and crothach aon mhear. From my own experience of playing these techniques, I have grouped them together and assigned (as a memory aid) the ogham symbol Fearn to identify this grouping.
+
+- My process involved coding an algorithm which generates variable outputs, each image unique and repeatable based on a digital signature which determines all randomness in the image. Think of this signature as a seed or DNA for all the variability of the specific image. From a set of circa 200 unique images generated by the algorithm, I curated 15 images for printing and display in the exhibition on two tables. 7 of these images are shown in the photograph.  [Lead into long form...]
+
+- I created the Lúthchleasa exhibition to begin expressing my emotional response to the music encoded in the Bunting manuscripts [collection].
+
+- I am communicating my range of responses to the lúthchleasa, representing these responses in visual form to share the emotional, musical(harmonic and rhythmical), linguistic and physical attributes I associate with each of these lúthchleasa.
+
+- The emotion which were primary while I made this artwork was calm.   Certainly over the 6 months or so it took to make the work there were times of anxiety and frustration, but on the whole I experienced a sense of calm while methodically creating and combining the functional building blocks of code which represented the visual ideas I wanted to make.  A few times I even experienced surprise and wonder, especially when I introdcued randomness into grid of Fearn... carthesis (sail), - The emotions I experience when playing lúthchleasa are... awe, gratitude, excitement, satisfaction, joy, relief, amusement, soothed, buzzing/alert, focussed, proud, - Emotion comes through the work through colour, the juxtiposition of hard lines and relaxed structure, notes "flying" away, released from strait jacket.
+
+- I believe that predictable, repeatable human emotional response is hard-coded into the techniques - I believe that these responses can be mapped visually, individually and overlapping - Viewers can see this belief coming through in the artwork in my Lúthchleasa collection in several places. This belief takes form in the primative geometric shapes, random distributions of same, and in the combination of attributes (colour, structure,) resulting in emergent complexity. This belief also comes through in how I am linking music and visuals, both in exhibition/installation, and also in live performance. My questioning of conventional interpretations of the music represented in the Bunting manuscripts is expressed in the curation of the Fearn series in GAC, where I chose not to mount the pieces on the wall but rather flat on a display table.
+
+- Learning about art history I found abstract expression (check art history term) fitted well with my approach of representing ideas as abstract colourful forms (Hilma Af Klint, Wassily Kandinsky).  Abstract also seemed to me a good way to consider the early Gaelic art - that these forms and symbols do indeed represent ideas (archetypal forms in nature, breath and speech..).  This way of considering early Gaelic art, and other so-called "primative" art globally, is inspired by my reading of Sensitive Chaos by ...  Taking an abstract approach also fitted with my intuition to relax constraints of directly linking visuals to music, as this allowed the unknown / gaps in the Bunting music to fill themselves in - also this honoured my own intuition from being imbibed in traditional singing and dance music.
+
+- I made this work to map out visually the idea of luthchleasanna, giving each technique their own visual soundscape so to speak, an audiovisual space to hold my current and longer term explorations of the lúthchleasanna as my understanding of their emotional content evolves.
+
+- I make work using digital prints, installation and live solo performance because it allows me to engage with diverse contemporary audiences while I work to [faithfully and] playfully evolve the richness of ideas represented in early Irish harp music, song and art.
+
+- I am investigating my belief that there is a link between the ideas expressed visually and sonically in early Irish music and art.  I belive theses ideas are rule-based, geometric, with variability / deviations from the rules expressible with randomness.  I also believe that music collected by Bunting represents datapoints in a broad dynamic spectrum, not static unchanging relics.  I believe that this spectrum can be reconstructed, using digital art forms and ideas of geometry and randomness.
+
+- I was thinking about whether the visual art (which includes Celic knot-work, overlaid lozenges, and circular motifs) on the Trinity harp express the same ideas as those represented by the music the harp was designed for, and I created the Lúthchleasa exhibition which explores this thought with abstract forms and sound samples.
+  
+- During the process I thinking about paths in the Celtic knotwork decorations on my harp, as well as the staves and notes layered on the pages of the Bunting manuscripts. I thought about how I might reverse engineer the layers, a sort of archaelogy of the layers from the compound image.  I also thought about affordances of the browser - linking sounds and visuals             
+- 2. My work is a combination of play and cultural inheritance. 
+              
+- I don't gravitate towards academic study of early Irish harp music, instead I take an experimental approach, curating experiences of resonance using my own voice and body in collaboration with my harp, and a range of multimedia technologies. (affordances)
+    
+- Several things inspired this direction.  During my Agility bursary I had with two mentors, Louise Manifold ... and Ann Heymann ... The conversations I had with Louise and Ann inspired the direction.  Earlier in 2017, during an Arts Council Bursary, I began painting.  When I discovered p5.js tutorial of Dan Shiffman in 2019 during the pandemic, I had the realisation that my background in coding was worthwhile for me to begin drawing upon, as I do not have a strong background in traditional art.  I heard from several sources that bringing the main parts of your life into your art is a really good strategy (..read in a great book called Art and Fear by ...), and this resonated with me to begin use computer code to represent using generative art the ideas I have been developing about the harp and singing and their relation to early Gaelic visual art.  ... Frustration of not relating to accepted wisdom of historically informed practice, 
+
+- I discovered that my approach needed to be iterative and experimental- I discovered that my approach needed to be of the hand-curated variety rather than of the long form variety, given (both) the higher artisic and technical challenges of the latter.
+
+- I created the Fearn series to express my visual mapping of musical attributes associated with four specific fingernail techniques (Lúthchleasa) recorded by Bunting from the last of the early Irish harpers in the 1790s.
+  
+- The 121x142mm dimensions of each piece in the Fearn series matches the dimensions of Edward Bunting's field notebook, while the paper chosen () is mindful of the laid-paper technology which had recently emerged at the time Bunting collected this harp music. 
+
+- In the process of creating this work, I also gained the experience of successfully delivering an ambitious multimedia exhibtion.
+
+- [In the process of creating this work,] some ideas crystalised as I hoped while others proved too technically challenging in the timescales available and so formed the seeds for future work.
+
+- I find inspiration in sharing my work in progress with like-minded artists; this type of sharing is the M.O. of many generative artists who regularly share their work in progress, as do I, on a variety of social media 
+
+- To me the most important thing is singing.              
+
+- Breathing and resonance is at the centre of my art                            
+
+- # how prompts... I physically engaged in the creation of the work by playing the lúthchleasa on my harp and absorbing their musicality.  Then I sat and wrote code using a computer keyboard, and viewing the results on a computer screen. I visited the gallery space and through discussions with the gallery team as well as mentorship, decided that displaying the images horizontally rather than the traditional vertical mounting was appropriate, both for the pieces and for architecture of the room. - I am uniquely presenting the subject by presenting the physical prints horizontally, and by abstracting the notes and staves in the Bunting manuscripts, playing with their structure and introducing colour - Through experimentation (and happy accidents!) I discovered that carefully introducing randomness into the underlying grid gave a softer more organic feel to the overall composition - I chose the browser as my primary medium by researching a broad range of computer languages over the course of the pandemic (2020 & 2021).  It became apparent to me how much of human time and attention globally is spent within this browser environment. I also realised how powerful a multimedia medium the browser is already, with additional features being added by browser designers on a daily basis.  A big ah-ha moment was when I demonstrated to myself that I could render to high-resolution and print the art I made in and for the browser, so that I could access the best of both worlds - the reach and facility of the browser with the warmth, texture and visual fidelity of a fine-art print.- I would like the viewer to approach the work with awareness of their point of view, an awareness encouraged by the choice of the artist to display the pieces in the horizonal (reminiscent to how museum pieces are displayed) rather than the more traditional choice of vertical wall mounting. With a curiosity about how accessible we feel the music represented in the art to be
+
+- # what prompts... I am breaking apart / separating / categorising the families of techniques, and examining their attributes - I would encourage viewers to take a closer looks at the fine detail in the noteheads, and how the attributes of the techniques are mapped to the visuals of each piece in the Fearn series, as indicated by the names. - The richness of the early Irish harp and visual art traditions keeps me curious and dedicated, especially how to find contemporary and appropriate settings for expressing the ideas for which this instrument and the music it can make is uniquely suited. - The artwork involved mentorship (both musical with Ann Heymann and visual with Louise Manifold), developing skills in computer coding of visuals and audio in the browser, travel to Galway Arts Centre for site visits and well as production of the exhibition, and technology in multiple forms - print, photo, video, computer hardware, remote monitoring of audio visual installation, electronic effects during live performance. 
+
+:END:
+:LOGBOOK:
+- Note taken on [2023-03-21 Tue 08:12] \\
+  Embrace that I'm at early stages.  I'm setting up conditions for my further exploration of luthchleasa LONG TERM.  Its about the ecosystem, boundaries, conditions in which my exploration, experimentation, thrives.
+- Note taken on [2023-03-21 Tue 07:54] \\
+  Discussion with Gaye and Chris might help to tease out how I express whether singing, or singing and harp is at the centre of my art.  Really it is an intention.  I want to create conditions conducive to me singing daily, with harp, in a world in which voice and resonance in the body, or wrapped around a resonanting harp, is atrophying down the senses and body parts which can engage with the tiny reduced affordances of technologies designed without .... e.g., Ge's image of a giant eye on a finger, as seen by the computer!
+- Note taken on [2023-03-20 Mon 18:23] \\
+  ;; Structures:
+                ;;; storytelling - beginning, middle and end
+                ;;; medium / process / understanding of the work (with strong, attention grabbing, end sentence)
+                ;;; field notes (use words to create curiosity, share info and provoke closer examination of subject and form)
+                ;;;; para to describe where you are, or what exploiring (the general caption)
+                ;;;; notes re individual pieces (with attributes)
+                ;;; (always lead back to what viewers are seeing)
+- Note taken on [2023-03-20 Mon 12:14] \\
+  I wish to remain sufficiently general so that I avoid hemming in my artistic freedom, while still expressing the why and worthiness of my harp-specific work so that audiences / viewers will take a closer look at my work (both specifically and overall).
 :END:
