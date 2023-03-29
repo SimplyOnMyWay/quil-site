@@ -2,8 +2,21 @@
 
 
 
-* A 200-300 word description of what is featured in each image, so that they are contextualised for readers :REV1:GREEN:
+* A 200-300 word description of what is featured in each image, so that they are contextualised for readers :REV1:AMBER:
 :DESCRIPTION:
+- The images shown are taken from an exhibition of generative art by multimedia artist Mícheál Ó Catháin, titled \"Lúthchleasa [lu:hxlˈæsə]\". The show, which combines digital archival prints, audiovisual installation and live solo performance on harp, voice and electronics, represents Mícheál's emotional response to the music encoded in the Bunting manuscripts, a collection of early Gaelic harp music and songs from the turn of the 1800s.
+- Mícheál's process for his Lúthchleasa collection involved coding five custom computer algorithms which each generated a series of variable digital images. Though variable each image is unique and repeatable based on a digital signature which determines all randomness in the image. Think of this signature as a seed or DNA for all the variability of the specific audiovisual output. Mícheál generated about 1000 images from each of the five algoriths. He then curated a series of 100 images from each of these 5 sets. During a last curation step Mícheál selected 16 images for printing in medium 400 x 400 mm format from the Beith, Coll, Luis and Sail algorithms, and 15 images for printing in small 141 x 121 mm format from the Fearn algorithm. The medium format prints were wall-mounted, while the 15 small format pieces from the Fearn series were exhibited on two glass-topped display tables. In an adjacent room,
+- The photographs show a series of seven digital archival prints from the artist's Fearn series, each 141 x 121 mm on Hahnemuhle Museum Etching paper, presented underneath glass on a display table during the artist's solo exhibition at Galway Arts Centre.
+- The 121 x 142 mm dimensions of each print in the Fearn series are in homage to the dimensions of the collecting field paper of Edward Bunting, while the paper chosen (Hahnemuhle Museum Etching paper) is mindful of the transition from laid to wove paper-making technology which happened during Bunting's lifetime.
+- During Winter 2021 it was uncertain if the physical exhibition would proceed due to covid lockdown restrictions. Consequently Mícheál created a virtual audiovisual exhibition of the work online, as well as physical fine-art prints and digital display of the images mounted in the physical exhibition space, with accompanying generative audio. Happily in-person viewing of the exhibition went ahead!
+- The form of the pieces in the Fearn series comprises intersecting music staves and bordered paths reminiscent of Celtic knot-work, with clouds of musical note-heads escaping their confines.
+- Mícheál applied a rule-based colour palette, based on a gradient of reds to yellow-greens in \"north to south\" direction, with a gradient of blue-greens to violets in the \"west to east\" direction.
+
+
+
+
+
+
 - The photographs show a series of seven digital archival prints, each 141 x 121 mm on Hahnemuhle Museum Etching paper, presented underneath glass on a display table at Galway Arts Centre.
 
 - The Fearn series (15 small-format Giclée prints) is one of five series of generative art featured in Mícheál's solo show at Galway Arts Centre in December 2021. The other series, titled Beith, Coll, Luis and Sail, comprised 16 medium format prints - 400 x 400 mm. The show, which combined giclée prints, audiovisual installation and live solo performance on harp, voice and electronics, represented Mícheál's emotional response to the music encoded in the Bunting manuscripts, a collection of early Gaelic harp music and songs from the turn of the 1800s.
@@ -18,6 +31,13 @@
   
 :END:
 :LOGBOOK:
+- Note taken on [2023-03-29 Wed 19:21] \\
+  Martin:
+  description...
+  likes encoded,
+  turn of the 1800s - confusing, make specific 1792 - 1805
+  minimise numbers as people skim, and switch off - though 141x121 is good, move other numbers to the end
+  During Winter 2021...  take out or move into bio
 - Note taken on [2023-03-28 Tue 15:45] \\
   lockdown para could lead a story style bio, possibly!
 - Note taken on [2023-03-21 Tue 18:43] \\
@@ -42,6 +62,21 @@
 
 :END:
 :LOGBOOK:
+- Note taken on [2023-03-29 Wed 19:29] \\
+  consider early Gaelic harp instead of harp (as Irish audience) and is integral to what I do... consider performance (early Gaelic harp & voice), computer code, and installation.
+  
+  esp since 2nd para mentions harp
+  
+  likes guided by the rhythms of his sean nos singing --- musical native of sean nós ---emphasise grounded from childhood.  Juxtapose my paraellel careers and the parallel nature of the work
+  
+  front load engineering ... a main theme of coming together of artistic technique and engineering techniques
+  
+  
+  "codes custom alrog...." split into 2, or start with nourishes... on harp's own terms
+  
+  "common repertoire -> living tradition
+  
+  take out (than purely historical or traditional) ... reconsider "wider context"
 - Note taken on [2023-03-21 Tue 14:53] \\
   consider story telling style here!
 - Note taken on [2023-03-20 Mon 18:21] \\
@@ -92,6 +127,16 @@
 - In the process of creating Lúthchleasa [], some ideas crystalised as I hoped while others proved too ambitious in the timescales available and so form the seeds for future work!
 :END:
 :LOGBOOK:
+- Note taken on [2023-03-29 Wed 19:53] \\
+  Martin likes the mental picture
+  resonance is over-used!
+  mozart rolled dice...  aleatoric - Ludisofsky 20thC
+  remove 1950...  
+  pioneered in a contemporary setting by such artists...
+  
+  Trinity --- visual art, needs a micro introduction --- like back of coin fro the harp
+  
+  Elaborate on laying work flat and ... point of view
 - Note taken on [2023-03-28 Tue 12:10] \\
   By geometry of early Gaelic harp music, I mean examples such as Mathieu's lattice for all the modes played on early Gaelic harp, the lines of the strings and the gaps between strings and groups of strings - mappable from the lattice.  THe geometry of my hands and my heel navigates along the soundbox and my fingers and thumbs gauge the gaps.  Compositions may be circular (piobrachd), symmetry features in ABAB parts etc, luthchleasa feel geometric - patterns which could almost certainly be mapped to a geometric shape....
 - Note taken on [2023-03-26 Sun 12:09] \\
