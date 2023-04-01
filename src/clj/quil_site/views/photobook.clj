@@ -29,8 +29,12 @@
               [:br]
               [:p {} [:b "Beith Series"]]
               [:a {:href "../img/art/luthchleasa_documentation/beith-20230328T162036404-seed-140-10800x10800px.tif"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/beith-140-1000x1000.jpg", :width "50%"}]]
-              [:p {} "Title of series: Beith (Birch)"]
+              [:a {:href "https://objkt.com/collection/KT19GgvFszeTctuf9z1f8TJ1bpNcM532MJN8"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/qr-beith.png", :width "15%"}]]
               [:p {} "Title of piece: Barrlúth oscailte II"]
+              [:p {} "Title of series from the piece is taken: Beith [bɛ'] (Gaelic for birch tree)"]
+              [:p {} "Browse and purchase artwork from the Beith series by scanning the QR code. (URL for web version of photobook:  " [:a {:href "https://objkt.com/collection/KT19GgvFszeTctuf9z1f8TJ1bpNcM532MJN8"} "https://objkt.com/collection/KT19GgvFszeTctuf9z1f8TJ1bpNcM532MJN8"] ")"]
+              [:p {} "Immutable address of the Beith series on the Tezos blockchain: KT19GgvFszeTctuf9z1f8TJ1bpNcM532MJN8"]
+
               [:br]
               [:p {} [:b "Coll Series"]]
               [:a {:href "../img/art/luthchleasa_documentation/coll-20230328T170814857-seed-800-7800x7800px.tif"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/coll-800-1000x1000.jpg", :width "50%"}]]
@@ -70,10 +74,12 @@
               [:p "Mícheál's process for his Lúthchleasa collection involved coding five custom computer algorithms which each generated a series of variable digital images. Though variable each image is unique and repeatable based on a digital signature which determines all randomness in the image. Think of this signature as a seed or DNA for all the variability of the specific audiovisual output. Mícheál generated about 1000 images from each of the five algoriths. He then curated a series of 100 images from each of these 5 sets. During a last curation step Mícheál selected 16 images for printing in medium 400 x 400 mm format from the Beith, Coll, Luis and Sail algorithms, and 15 images for printing in small 141 x 121 mm format from the Fearn algorithm. The medium format prints were wall-mounted, while the 15 small format pieces from the Fearn series were exhibited on two glass-topped display tables. In an adjacent room, "]
               [:p "The photographs show a series of seven digital archival prints from the artist's Fearn series, each 141 x 121 mm on Hahnemuhle Museum Etching paper, presented underneath glass on a display table during the artist's solo exhibition at Galway Arts Centre."]
               [:p "The 121 x 142 mm dimensions of each print in the Fearn series are in homage to the dimensions of the collecting field paper of Edward Bunting, while the paper chosen (Hahnemuhle Museum Etching paper) is mindful of the transition from laid to wove paper-making technology which happened during Bunting's lifetime."]
-
-              [:p "During Winter 2021 it was uncertain if the physical exhibition would proceed due to covid lockdown restrictions. Consequently Mícheál created a virtual audiovisual exhibition of the work online, as well as physical fine-art prints and digital display of the images mounted in the physical exhibition space, with accompanying generative audio. Happily in-person viewing of the exhibition went ahead!"]
               [:p "The form of the pieces in the Fearn series comprises intersecting music staves and bordered paths reminiscent of Celtic knot-work, with clouds of musical note-heads escaping their confines."] 
-              [:p "Mícheál applied a rule-based colour palette, based on a gradient of reds to yellow-greens in \"north to south\" direction, with a gradient of blue-greens to violets in the \"west to east\" direction."]]
+              [:p "Mícheál applied a rule-based colour palette, based on a gradient of reds to yellow-greens in \"north to south\" direction, with a gradient of blue-greens to violets in the \"west to east\" direction."]
+
+              [:p {} ""]
+              [:a {:href "../img/art/luthchleasa_documentation/sail-05--20211123T100906460-seed-7760__10800x10800_GAC-FINAL.tif"} [:img {:class "hormargins", :src "../img/art/luthchleasa_documentation/scaled/sail-7760-1000x1000.jpg", :width "50%"}]]
+              ]
               
              [:div {:class "column" :id "bio"}
               [:h3 {} [:strong {} "A 300-500 word biographical note (written in the third person)"]]
