@@ -48,35 +48,53 @@
 
 * A 300-500 word biographical note (written in the third person) :REV1:AMBER:
 :BIO:
-- Mícheál is a multimedia artist working primarily with harp & voice performance, computer code, installation. He is a recipient of Irish Arts Council Agility (2021), Traditional Arts Bursary (2017) and Deis Recording & Publication (2017) Awards. Mícheál has performed solo harp & voice concerts at Achill International Harp Festival and Scoil na gCláirseach Festival of Early Irish Harp, and his generative art has been exhibited at Naas Art & Culture Centre, Galway Arts Centre [and the Lord Mayor's Pavillion, Cork.]
+- Mícheál Ó Catháin is a multimedia artist working primarily with performance (early Gaelic harp and voice), computer code, installation. Faithful to historical practices, Mícheál sings with the harp on his left shoulder and employs specialised fingernail techniques ("lúthchleasa") to shape the resonance of these metal-strung instruments. His decades-long grounding in "sean-nós" (old style) singing guides his arrangements of Bunting manuscript pieces, breathing fresh life into Ireland's ancient harp music for contemporary audiences.
 
-- Faithful to historical practices, Mícheál sings with the harp on his left shoulder and employs specialised fingernail techniques ("lúthchleasa") to shape the resonance of these metal-strung instruments. His arrangements of Bunting manuscript pieces, guided by the rhythms of his "sean-nós" singing, breathe fresh life into Ireland's ancient harp music for contemporary audiences.
+Mícheál works three days per week maintaining a successful engineering career in offshore renewables.  The balance of his working week is devoted to singing with the early Gaelic harp and related generative art. The crossover between Mícheál's parallel artistic and engineering careers find expression in the audiovisual exhibitions and live shows he creates, including the digital artwork shown here.
 
-- Mícheál gravitates equally towards the ancient and the emergent.  He codes custom algorithms to make and share generative audiovisual art which reflects and nourishes his process of engaging with the early Gaelic harp on the harp's own terms.
+- Mícheál gravitates equally towards the ancient and the emergent.  Applying his strong engineering background, Mícheál codes custom computer algorithms to make and share generative audiovisual art.  This artwork reflects and nourishes his process of engaging with the early Gaelic harp on the harp's own terms.
 
-- In recent years...Micheal has integrated digital art skills with his [existing] strong background in harp/voice performance
-   As a multimedia artist, Micheal curates beautiful and unique audiovisual experiences for audiences across three interweaving and artistically fertile strands:
+- As a multimedia artist, Micheal curates beautiful and unique audiovisual experiences for audiences across three interweaving and artistically fertile strands:
      Historical: historically viable performance of ancient harp pieces from archival manuscripts and collections
-     Traditional: arrangement and performance of historical repertoire, returning these pieces faithfully into the common repertoire
-     Contemporary: performance of improvised music, with associated generative artwork and digital sound art, bringing the early Irish harp into a wider context (than purely historical or traditional) for contemporary audiences
+     Traditional: arrangement and performance of historical repertoire, returning these pieces faithfully to the living tradition
+     Contemporary: improvised music and song alongside generative visual and sound art, reimagining the early Gaelic harp in contemporary contexts
+
+Based in Youghal, East-Cork, Mícheál is a recipient of Irish Arts Council Agility (2021), Traditional Arts Bursary (2017) and Deis Recording & Publication (2017) Awards. He has performed solo harp & voice concerts at Achill International Harp Festival and Scoil na gCláirseach Festival of Early Irish Harp, and his generative art has been exhibited at Naas Art & Culture Centre, Galway Arts Centre, and the Lord Mayor's Pavillion, Cork.
+
+For custom requests or general inquiries get in touch with Mícheál at any time. Contact details on his website michealocathain.com.
+
+View and collect work from the Mícheál's Lúthchleasa [[[lu:hxlˈæsə]]] collection on the Tezos blockchain by scanning the following QR codes:
+
+
+
+
 
 :END:
 :LOGBOOK:
-- Note taken on [2023-03-29 Wed 19:29] \\
-  consider early Gaelic harp instead of harp (as Irish audience) and is integral to what I do... consider performance (early Gaelic harp & voice), computer code, and installation.
-  
-  esp since 2nd para mentions harp
-  
-  likes guided by the rhythms of his sean nos singing --- musical native of sean nós ---emphasise grounded from childhood.  Juxtapose my paraellel careers and the parallel nature of the work
-  
-  front load engineering ... a main theme of coming together of artistic technique and engineering techniques
-  
-  
-  "codes custom alrog...." split into 2, or start with nourishes... on harp's own terms
-  
-  "common repertoire -> living tradition
-  
-  take out (than purely historical or traditional) ... reconsider "wider context"
+:LOGBOOK:
+- Note taken on [2023-04-01 Sat 13:43] \\
+  personality behind the work!
+  unique insightful perosnal or humourous
+  freedom to express myself - don't stray from subject of my artistic development
+  great way to draw audience in and make more receptive
+  craft a story
+  omit life event, highlight whatever details I want
+  if longer than 1 para, make sure it reads as a story
+  who I am, not just what I do
+:END:
+
+* Note taken on [2023-03-29 Wed 19:29] [8/8]
+- [X] consider early Gaelic harp instead of harp (as Irish audience) and is integral to what I do... consider performance (early Gaelic harp & voice), computer code, and installation.
+- [X] esp since 2nd para mentions harp
+- [X]  likes guided by the rhythms of his sean nos singing --- musical native of sean nós ---emphasise grounded from childhood.
+- [X] Juxtapose my paraellel careers and the parallel nature of the work
+- [X]  front load engineering ... a main theme of coming together of artistic technique and engineering techniques
+- [X]  "codes custom alrog...." split into 2, or start with nourishes... on harp's own terms
+- [X]  "common repertoire -> living tradition
+- [X]  take out (than purely historical or traditional) ... reconsider "wider context"
+  Micheal has performed as a singer and fiddle player for decades, a foundation upon which he has established a deep practice since 2011 with the early Irish harp. Since 2015 he has maintained parallel careers in art and music alongside offshore renewables 
+
+
 - Note taken on [2023-03-21 Tue 14:53] \\
   consider story telling style here!
 - Note taken on [2023-03-20 Mon 18:21] \\
